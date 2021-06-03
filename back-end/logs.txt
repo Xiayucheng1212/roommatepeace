@@ -1,0 +1,80 @@
+1621081515 ERROR  Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+1621083977 ERROR  ReferenceError: todos is not defined
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\src\routers\todo.js:15:5
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:275:10)
+    at jsonParser (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\body-parser\lib\types\json.js:110:7)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+1621084062 ERROR  ReferenceError: start is not defined
+    at Object.getTodos (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\src\model\todo.js:20:37)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\src\routers\todo.js:15:11
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:275:10)
+    at jsonParser (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\body-parser\lib\types\json.js:110:7)
+1621084530 ERROR  ReferenceError: mood is not defined
+    at Object.accomplishTodo (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\src\model\todo.js:38:26)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\src\routers\todo.js:38:11
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\body-parser\lib\read.js:130:5
+1621084674 ERROR  QueryResultError: No data returned from the query.
+    at Query.callback (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-promise\lib\query.js:213:41)
+    at Query.handleReadyForQuery (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (events.js:315:20)
+    at D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg\lib\connection.js:115:12
+    at Parser.parse (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+1621084850 ERROR  error: syntax error at or near "RETURNING　"
+    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:278:15)
+    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+1621084853 ERROR  error: syntax error at or near "RETURNING　"
+    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:278:15)
+    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\web-practice\temp\weathermood-server_2021\node_modules\pg-protocol\dist\index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+1621396048 ERROR  error: invalid input syntax for type integer: "true"
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHU Y1S2/softwareLab/weathermood-server_2021/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHU Y1S2/softwareLab/weathermood-server_2021/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHU Y1S2/softwareLab/weathermood-server_2021/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHU Y1S2/softwareLab/weathermood-server_2021/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+1621509430 ERROR  Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+1621509486 ERROR  Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
