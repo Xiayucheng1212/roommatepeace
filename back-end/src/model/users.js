@@ -1,6 +1,7 @@
 if (!global.db) {
     const pgp = require('pg-promise')();
     console.log(`==DEBUG== process.env.DB_URL = ${process.env.DB_URL}`);
+    console.log("12311111111111111111111111");
     db = pgp(process.env.DB_URL);
   }
   //getsingleuser
@@ -28,9 +29,10 @@ if (!global.db) {
   function createuser(user) {
     const sql = `
           INSERT INTO users (name,email,password,color,reminder,state,expect,photo)
-          VALUES (${user.name},${user.email},${user.password},${user.color},${user.reminder},${user.state},${user.expect},${user.photo})
+          VALUES (\'${user.name}\',\'${user.email}\',\'${user.password}\',\'${user.color}\',\'${user.reminder}\',\'${user.state}\',\'${user.expect}\',\'${user.photo}\')
           RETURNING *
       `;
+      console.log(sql);
     return db.one(sql);
   }
   //updateuser
