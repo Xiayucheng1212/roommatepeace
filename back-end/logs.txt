@@ -78,3 +78,5 @@
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
 1621509486 ERROR  Error: getaddrinfo ENOTFOUND undefined
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+1622729059 ERROR  Error: getaddrinfo ENOTFOUND undefined
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)

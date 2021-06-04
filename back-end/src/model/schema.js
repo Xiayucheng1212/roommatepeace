@@ -36,7 +36,7 @@ CREATE TABLE users (
     name            text NOT NULL,
     email           text NOT NULL,
     password        text NOT NULL,
-    room_id         INT NOT NULL,
+    room_id         INT NOT NULL DEFAULT 0,
     FOREIGN KEY (room_id) REFERENCES rooms(id),
     color           text NOT NULL,
     reminder        boolean,
@@ -55,7 +55,7 @@ CREATE TABLE complains (
 );
 CREATE TABLE notifications (
     id          serial PRIMARY KEY NOT NULL,
-    room_id         INT NOT NULL,
+    room_id     INT NOT NULL,
     FOREIGN KEY (room_id) REFERENCES rooms(id),
     text        text NOt NULL,
     ts          bigint NOT NULL DEFAULT (extract(epoch from now()))
@@ -79,6 +79,11 @@ const dataSql = `
     SELECT
         'Clear',
         'Lab' || (i-1) || ' todos' || (i+1)
+    FROM generate_series(1, 100) AS s(i);
+    INSERT INTO posts (mood, text)
+    SELECT
+        'Clear',
+        'word' || i || ' word' || (i+1) || ' word' || (i+2)
     FROM generate_series(1, 100) AS s(i);
 `;
 
