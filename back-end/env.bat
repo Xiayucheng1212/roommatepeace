@@ -1,9 +1,10 @@
 echo "setting environment variables"
 
-export NODE_ENV=development
-export PG_USERNAME=postgres
-export PG_HOSTNAME=localhost
-export PG_PORT=5432
-export PG_DB_NAME=roommatepeace
+SET NODE_ENV=development
+SET PG_USERNAME=postgres
+SET PG_HOSTNAME=localhost
+SET PG_PASSWORD=andrea0706
+SET PG_PORT=5432
+SET PG_DB_NAME=roommatepeace
 
 echo "DONE"

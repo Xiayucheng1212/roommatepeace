@@ -1,7 +1,8 @@
 try {
   switch (process.env.NODE_ENV) {
     case 'development':
-      process.env.DB_URL = `postgres://${process.env.PG_USERNAME}@${process.env.PG_HOSTNAME}:${process.env.PG_PORT}/${process.env.PG_DB_NAME}`;
+      process.env.DB_URL = `postgres://${process.env.PG_USERNAME}:${process.env.PG_PASSWORD}@${process.env.PG_HOSTNAME}:${process.env.PG_PORT}/${process.env.PG_DB_NAME}`;
+      console.log(process.env.PG_DB_NAME);
       break;
     default:
       // 'staging' or 'production'

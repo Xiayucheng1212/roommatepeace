@@ -1,3 +1,4 @@
+require('dotenv').config()
 require('../config.js');
 const express = require('express');
 
