@@ -39,10 +39,11 @@ if (!global.db) {
   function updateuser(user) {
     const sql = `
           UPDATE users
-          SET name = ${user.name}, email = ${user.email}, password=${user.passsword}, color = ${user.color}, remider = ${user.reminder}, state = ${user.state}, expect = ${user.expect}, photo = ${user.photo}
-          WHERE id = ${user.id}
+          SET name = \'${user.name}\', email = \'${user.email}\', password=\'${user.password}\', color = \'${user.color}\', reminder = \'${user.reminder}\', state = \'${user.state}\', expect = \'${user.expect}\', photo = \'${user.photo}\'
+          WHERE id = \'${user.id}\'
           RETURNING *
       `;
+    console.log(sql);
     return db.one(sql);
   }
   

@@ -14,7 +14,7 @@ router.get('/getsingle', function (req, res, next) {
   userModel
     .getsingleuser(id)
     .then((user) => {
-      res.json(user);
+      res.json(user[0]);
     })
     .catch(next);
 });
@@ -44,7 +44,7 @@ router.post(
   '/update',
   function (req, res, next) {
     userModel
-      .updateuser(res.body)
+      .updateuser(req.body)
       .then((user) => {
         res.json(user);
       })
