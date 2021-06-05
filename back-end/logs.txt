@@ -80,3 +80,85 @@
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
 1622729059 ERROR  Error: getaddrinfo ENOTFOUND undefined
     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
+1622817694 ERROR  error: syntax error at or near "up"
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+1622818255 ERROR  error: syntax error at or near "up"
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+1622819399 ERROR  SyntaxError: Unexpected token I in JSON at position 193
+    at JSON.parse (<anonymous>)
+    at parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:89:19)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/body-parser/lib/read.js:121:18
+    at invokeCallback (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/raw-body/index.js:224:16)
+    at done (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/raw-body/index.js:213:7)
+    at IncomingMessage.onEnd (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/raw-body/index.js:273:7)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+1622819406 ERROR  error: syntax error at or near "up"
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+1622861440 ERROR  TypeError: Cannot read property 'name' of undefined
+    at Object.updateuser (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/src/model/users.js:42:29)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/src/routers/users.js:47:8
+    at Layer.handle [as handle_request] (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/body-parser/lib/read.js:130:5
+1622861472 ERROR  TypeError: Cannot read property 'name' of undefined
+    at Object.updateuser (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/src/model/users.js:42:29)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/src/routers/users.js:47:8
+    at Layer.handle [as handle_request] (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at /Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/body-parser/lib/read.js:130:5
+1622861513 ERROR  error: syntax error at or near "up"
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+1622861614 ERROR  error: column "remider" of relation "users" does not exist
+    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (events.js:315:20)
+    at addChunk (_stream_readable.js:295:12)
+    at readableAddChunk (_stream_readable.js:271:9)
+    at Socket.Readable.push (_stream_readable.js:212:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)

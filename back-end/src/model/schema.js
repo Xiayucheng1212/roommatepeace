@@ -32,7 +32,7 @@ CREATE TABLE rooms (
     name        text NOT NULL
 );
 CREATE TABLE users (
-    id              serial PRIMARY KEY NOT NULL,
+    id              serial PRIMARY KEY,
     name            text NOT NULL,
     email           text NOT NULL,
     password        text NOT NULL,

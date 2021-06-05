@@ -2,7 +2,7 @@ require('dotenv').config()
 require('../config.js');
 const express = require('express');
 
-const postRouter = require('./routers/posts.js');
+const userRouter = require('./routers/users.js');
 const todoRouter = require('./routers/todo.js');
 const requestLogger = require('./middleware/request-logger.js');
 const errorHandler = require('./middleware/error-handler.js');
@@ -20,8 +20,8 @@ app.use(
   })
 );
 app.use(accessController); // Allows cross-origin HTTP requests
-app.use('/api/posts', postRouter);
-app.use('/api', todoRouter);
+
+app.use('/user', userRouter);
 app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 

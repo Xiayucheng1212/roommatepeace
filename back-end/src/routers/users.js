@@ -9,17 +9,17 @@ const router = express.Router();
 router.use(express.json());
 
 // getsingleuser                                      
-router.get('/getsingleuser', function (req, res, next) {
+router.get('/getsingle', function (req, res, next) {
   const { id } = req.query;
   userModel
     .getsingleuser(id)
     .then((user) => {
-      res.json(user);
+      res.json(user[0]);
     })
     .catch(next);
 });
 // getroomusers                                    
-router.get('/getroomusers', function (req, res, next) {
+router.get('/getroom', function (req, res, next) {
     const { room_id } = req.query;
     userModel
       .getroomusers(room_id)
@@ -30,7 +30,7 @@ router.get('/getroomusers', function (req, res, next) {
   });
 
 // Create
-router.post('/user', function (req, res, next) {
+router.post('/create', function (req, res, next) {
   userModel
     .createuser(req.body)
     .then((user) => {
@@ -44,7 +44,7 @@ router.post(
   '/update',
   function (req, res, next) {
     userModel
-      .updateuser(res.body)
+      .updateuser(req.body)
       .then((user) => {
         res.json(user);
       })
