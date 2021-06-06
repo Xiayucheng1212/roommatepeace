@@ -7,6 +7,7 @@ const service = axios.create({
 })
 
 export function getUsers(room_id){
-    return service.get('/getroom', {params:{room_id}})
-
+    let url = `${userBaseUrl}/getroom?room_id=${room_id}`
+    // return service.get('/getroom', {params:{room_id}})
+    return axios.get(url);
 }

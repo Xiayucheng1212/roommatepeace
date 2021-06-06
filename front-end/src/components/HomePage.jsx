@@ -57,6 +57,7 @@ export default class HomePage extends React.Component {
                     <div className="container">
                         {
                             this.state.users.map((item, index)=>{
+                                console.log(item);
                                 return(
                                     <UserCircle user={item}/>
                                 )
@@ -89,6 +90,7 @@ export default class HomePage extends React.Component {
        this.setState({
            users: res.data
        })
+    //    console.log(res);
     }
 
 
