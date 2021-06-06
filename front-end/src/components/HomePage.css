@@ -5,3 +5,12 @@
 .dropdown-menu{
     width: 100%;
 }
+.main .profile,.write{
+    border-radius: 50%;
+    /* width: 180px; */
+    width: 35%;
+    height: 180px;
+    background-color: pink;
+    color: black;
+    padding-top: 30px;
+}

@@ -25,7 +25,20 @@ export default class UserCircle extends React.Component {
         return (
             <Router>
                 <div className="circle">
-                    {this.props.user.name}
+                    {/*  name */}
+                    <div className="name">
+                        <Alert color="danger">
+                           {/* TODO */}
+                            {this.props.user.user_name}
+                        </Alert>
+                    </div>
+                    {/*  state */}
+                    <div className="state">
+                        <Alert color="danger">
+                           {/* TODO */}
+                           {this.props.user.state}
+                        </Alert>
+                    </div>
                 </div>
             </Router>
         );

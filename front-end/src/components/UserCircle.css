@@ -1,7 +1,16 @@
 .circle{
     border-radius: 50%;
-    width: 180px;
+    /* width: 180px; */
+    width: 35%;
     height: 180px;
     background-color: pink;
     color: black;
+    padding-top: 30px;
+}
+.name ,.state{
+    text-align: center;
+    width: 60%;
+    height: 25%;
+    margin:auto;
+    margin-bottom: 30px;
 }
