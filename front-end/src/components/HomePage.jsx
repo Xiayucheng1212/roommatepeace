@@ -8,7 +8,7 @@ import {
 import './HomePage.css';
 import UserCircle from './UserCircle.jsx';
 import {getUsers,getSingleUser} from '../api/users';
-
+import {getroomnotification} from '../api/notifications';
 export default class HomePage extends React.Component {
     constructor(props) {
 
@@ -17,6 +17,7 @@ export default class HomePage extends React.Component {
 
         this.state = {
             notificationNum: 0,
+            notifications:[],
             userNum: 0,
             users: [],
             complains: [],
@@ -37,14 +38,20 @@ export default class HomePage extends React.Component {
                     <div className="container">
                         <ButtonDropdown isOpen={this.state.notificationToggle} toggle={this.handleNotificationToggle}>
                             <DropdownToggle caret color="#ffffff">
-                                Notifications
+                               {
+                                   this.state.notificationNum > 0 &&
+                                   this.state.notifications[0].text
+                               }
                             </DropdownToggle>
                             <DropdownMenu>
-                                <DropdownItem header>Header</DropdownItem>
-                                <DropdownItem disabled>Action</DropdownItem>
-                                <DropdownItem>Another Action</DropdownItem>
-                                <DropdownItem divider />
-                                <DropdownItem>Another Action</DropdownItem>
+                                {
+                                    this.state.notificationNum >= 1 &&
+                                    this.state.notifications.map((item,index)=>{
+                                        if(index >= 1){
+                                            return (<DropdownItem>{item.text}</DropdownItem>)
+                                        }
+                                    })
+                                }
                             </DropdownMenu>
                         </ButtonDropdown>
                     </div>
@@ -67,13 +74,13 @@ export default class HomePage extends React.Component {
                         }
                     </div>
                     {/* profile and write */}
-                    <div classname="container profile write">
-                        <div classname="profile">
+                    <div className="container foot">
+                        <span className="profile">
                             {this.state.main_user.photo}
-                        </div>
-                        <div classname="write">
-
-                        </div>
+                        </span>
+                        <span className="write">
+                            
+                        </span>
                     </div>
                 </div>
             </Router>
@@ -99,12 +106,13 @@ export default class HomePage extends React.Component {
     async componentDidMount(){
        const res = await getUsers(0);
        const res1 = await getSingleUser(3);
+       const notifications = await getroomnotification(0);
        this.setState({
            users: res.data,
+           notifications: notifications.data,
+           notificationNum: notifications.data.length,
            main_user: res1.data
        })
-    //    console.log(res);
-        // console.log(res1);
     }
 
 
