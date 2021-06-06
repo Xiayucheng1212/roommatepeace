@@ -3,6 +3,8 @@ require('../config.js');
 const express = require('express');
 
 const userRouter = require('./routers/users.js');
+const notificationRouter = require('./routers/notifications.js');
+const complainRouter = require('./routers/complains.js');
 const todoRouter = require('./routers/todo.js');
 const requestLogger = require('./middleware/request-logger.js');
 const errorHandler = require('./middleware/error-handler.js');
@@ -22,6 +24,8 @@ app.use(
 app.use(accessController); // Allows cross-origin HTTP requests
 
 app.use('/user', userRouter);
+app.use('/notification', notificationRouter);
+app.use('/complain', complainRouter);
 app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 

@@ -8,46 +8,26 @@ function getroomnotifications(room_id) {
   const sql = `
         SELECT *
         FROM notifications
-        WHERE room_id = ${room_id}
+        WHERE room_id = \'${room_id}\'
+        ORDER BY ts DESC
+        LIMIT 3
     `;
   console.log(sql);
   return db.any(sql);
 }
-//getroomusers
-function getroomusers(room_id) {
+
+//createnotification
+function create(notification) {
   const sql = `
-        SELECT *
-        FROM users
-        WHERE room_id = ${room_id}
-    `;
-  console.log(sql);
-  return db.any(sql);
-}
-//createuser
-function createuser(user) {
-  const sql = `
-        INSERT INTO users (name,email,password,color,reminder,state,expect,photo)
-        VALUES (${user.name},${user.email},${user.password},${user.color},${user.reminder},${user.state},${user.expect},${user.photo})
+        INSERT INTO notifications (room_id,text)
+        VALUES (\'${notification.room_id}\',\'${notification.text}\')
         RETURNING *
     `;
-  return db.one(sql);
+  	console.log(sql);
+  	return db.one(sql);
 }
-//updateuser
-function updateuser(user) {
-  const sql = `
-        UPDATE users
-        SET name = ${user.name}, email = ${user.email}, password=${user.passsword}, color = ${user.color}, remider = ${user.reminder}, state = ${user.state}, expect = ${user.expect}, photo = ${user.photo}
-        WHERE id = ${user.id}
-        RETURNING *
-    `;
-  return db.one(sql);
-}
-
-
 
 module.exports = {
-getsingleuser,
-getroomusers,
-createuser,
-updateuser
+  	getroomnotifications,
+	create,
 };
