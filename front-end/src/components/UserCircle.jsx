@@ -1,8 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import {
-    ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    Alert
+
 } from 'reactstrap';
 
 import PropTypes from 'prop-types';
