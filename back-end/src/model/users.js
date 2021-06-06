@@ -18,9 +18,11 @@ if (!global.db) {
   //getroomusers
   function getroomusers(room_id) {
     const sql = `
-          SELECT *
+          SELECT users.name AS user_name, users.email, users.room_id, users.password, users.color, users.reminder, users.state,users.expect, users.photo, rooms.name AS room_name
           FROM users
-          WHERE room_id = ${room_id}
+          INNER JOIN rooms
+          ON users.room_id = rooms.id
+          WHERE rooms.id = ${room_id}
       `;
     console.log(sql);
     return db.any(sql);
