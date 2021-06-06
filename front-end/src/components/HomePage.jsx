@@ -7,7 +7,7 @@ import {
 
 import './HomePage.css';
 import UserCircle from './UserCircle.jsx';
-import {getUsers} from '../api/users';
+import {getUsers,getSingleUser} from '../api/users';
 
 export default class HomePage extends React.Component {
     constructor(props) {
@@ -21,7 +21,8 @@ export default class HomePage extends React.Component {
             users: [],
             complains: [],
             notificationToggle: false,
-            complainToggle: false
+            complainToggle: false,
+            main_user:[]
         };
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
@@ -54,7 +55,8 @@ export default class HomePage extends React.Component {
                             This is a danger alert — check it out!
                         </Alert>
                     </div>
-                    <div className="container">
+                    {/* roommates */}
+                    <div className="container roommates">
                         {
                             this.state.users.map((item, index)=>{
                                 console.log(item);
@@ -63,6 +65,15 @@ export default class HomePage extends React.Component {
                                 )
                             })
                         }
+                    </div>
+                    {/* profile and write */}
+                    <div classname="container profile write">
+                        <div classname="profile">
+                            {this.state.main_user.photo}
+                        </div>
+                        <div classname="write">
+
+                        </div>
                     </div>
                 </div>
             </Router>
@@ -87,10 +98,13 @@ export default class HomePage extends React.Component {
 
     async componentDidMount(){
        const res = await getUsers(0);
+       const res1 = await getSingleUser(3);
        this.setState({
-           users: res.data
+           users: res.data,
+           main_user: res1.data
        })
     //    console.log(res);
+        // console.log(res1);
     }
 
 

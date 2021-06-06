@@ -11,3 +11,9 @@ export function getUsers(room_id){
     // return service.get('/getroom', {params:{room_id}})
     return axios.get(url);
 }
+
+export function getSingleUser(id){
+    let url = `${userBaseUrl}/getsingle?id=${id}`
+    // return service.get('/getroom', {params:{room_id}})
+    return axios.get(url);
+}
