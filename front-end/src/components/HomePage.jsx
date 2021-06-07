@@ -23,7 +23,8 @@ export default class HomePage extends React.Component {
             complains: [],
             notificationToggle: false,
             complainToggle: false,
-            main_user:[]
+            main_user:[],
+            
         };
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
