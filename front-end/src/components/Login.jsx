@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import {
-    ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    Alert
+    Button, Form, FormGroup, Label, Input
 } from 'reactstrap';
 
 import './Login.css';
@@ -36,28 +35,40 @@ export default class Login extends React.Component {
                 <button onClick={this.handleEmail}>Email</button>
                 <button onClick={this.handlePassword}>Password</button>
                 <button onClick={this.checkIsLoggin}>send login</button>
+                <Form inline onSubmit={this.checkIsLoggin}>
+                    <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                        <Label for="exampleEmail" className="mr-sm-2">Email</Label>
+                        <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" onChange={this.handleEmail} />
+                    </FormGroup>
+                    <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+                        <Label for="examplePassword" className="mr-sm-2">Password</Label>
+                        <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" onChange={this.handlePassword} />
+                    </FormGroup>
+                    <Button>Submit</Button>
+                </Form>
             </Router>
         );
     }
-    async handleEmail(e){
+    handleEmail(e){
         console.log(e);
-        this.setState({email:'123123@gmail.com'});
+        console.log("wwwww");
+        this.setState({email:e.target.value});
     }
-    async handlePassword(e){
-        this.setState({password:'qwer'});
+    handlePassword(e){
+        this.setState({password:e.target.value});
     }
 
     checkIsLoggin(){
-        console.log(this.email,this.password);
+        console.log(this.state.email,this.state.password);
         if(!this.props.isLogged){
-            checkLogin("123123@gmail.com","qwer").then(user=>{
-                console.log(user);
+            checkLogin(this.state.email,this.state.password).then(user=>{
+                //console.log(user);
                 this.setState(()=>this.handleuserdata(user));
             })
         }
     }
     handleuserdata(user){
-        console.log(user);
+        // console.log(user);
         this.props.handleuserdata(user);    
     }
 }
