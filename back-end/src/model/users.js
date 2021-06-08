@@ -24,7 +24,7 @@ if (!global.db) {
           ON users.room_id = rooms.id
           WHERE rooms.id = ${room_id}
       `;
-    console.log(sql);
+    //console.log(sql);
     return db.any(sql);
   }
   //createuser
