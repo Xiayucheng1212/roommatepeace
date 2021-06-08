@@ -9,10 +9,10 @@ const router = express.Router();
 router.use(express.json());
 
 // checklogin
-router.post('/checklogin', function (req, res, next) {
-    console.log(req.body);
+router.get('/checklogin', function (req, res, next) {
+    console.log(req.query);
 	loginModel
-      .checklogin(req.body)
+      .checklogin(req.query)
       .then((user) => {
           res.json(user);
     })
