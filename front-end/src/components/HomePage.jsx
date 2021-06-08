@@ -4,26 +4,27 @@ import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
     Alert
 } from 'reactstrap';
-
+import {PropTypes} from 'prop-types';
 import './HomePage.css';
 import UserCircle from './UserCircle.jsx';
 import {getUsers,getSingleUser} from '../api/users';
 import {getroomnotification} from '../api/notifications';
 export default class HomePage extends React.Component {
+    static propTypes = {
+        user: PropTypes.object,
+    };
     constructor(props) {
-
-
         super(props);
 
         this.state = {
             notificationNum: 0,
             notifications:[],
             userNum: 0,
-            users: [],
+            roommates: [],
             complains: [],
             notificationToggle: false,
             complainToggle: false,
-            main_user:[],
+            // main_user:[],
             
         };
 
@@ -66,7 +67,7 @@ export default class HomePage extends React.Component {
                     {/* roommates */}
                     <div className="container roommates">
                         {
-                            this.state.users.map((item, index)=>{
+                            this.state.roommates.map((item, index)=>{
                                 console.log(item);
                                 return(
                                     <UserCircle user={item}/>
@@ -77,7 +78,7 @@ export default class HomePage extends React.Component {
                     {/* profile and write */}
                     <div className="container foot">
                         <span className="profile">
-                            {this.state.main_user.photo}
+                            {this.props.user.photo}
                         </span>
                         <span className="write">
                             
@@ -105,14 +106,13 @@ export default class HomePage extends React.Component {
     }
 
     async componentDidMount(){
-       const res = await getUsers(0);
-       const res1 = await getSingleUser(3);
-       const notifications = await getroomnotification(0);
+    console.log(this.props.user.data[0].room_id);
+       const res = await getUsers(this.props.user.data[0].room_id);
+       const notifications = await getroomnotification(this.props.user.data[0].room_id);
        this.setState({
-           users: res.data,
+           roommates: res.data,
            notifications: notifications.data,
            notificationNum: notifications.data.length,
-           main_user: res1.data
        })
     }
 

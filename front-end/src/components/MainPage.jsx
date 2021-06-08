@@ -15,7 +15,9 @@ import SignUp from './SignUp.jsx';
 export default class MainPage extends React.Component {
     static propTypes = {
         handleIsLogged: PropTypes.func,
-        isLogged: PropTypes.bool
+        handleuserdata: PropTypes.func,
+        isLogged: PropTypes.bool,
+        user: PropTypes.object,
     };
 
 
@@ -23,11 +25,8 @@ export default class MainPage extends React.Component {
         super(props);
 
         this.state = {
-            user_id: 0,
-            room_id: 0,
+            
         };
-
-
     }
 
     render() {
@@ -44,7 +43,10 @@ export default class MainPage extends React.Component {
                             <Route
                                 exact
                                 path="/login"
-                                component={Login}
+                                //component={Login}
+                                render={()=>(
+                                  <Login handleuserdata={this.props.handleuserdata}/>
+                                )}
                             />
                             {/* 完成驗證之後 傳送callback向上更新 */}
                             <Route path="/signUp" component={SignUp} />
@@ -54,8 +56,5 @@ export default class MainPage extends React.Component {
             </Router>
         );
     }
-
-
-
 
 }

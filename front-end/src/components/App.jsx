@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-ro
 import { } from '../api/users';
 import MainPage from './MainPage.jsx'
 import HomePage from './HomePage.jsx'
+import Login from './Login.jsx'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -11,17 +12,30 @@ export default class App extends React.Component {
 
         this.state={
             isLogged:false,
-            
+            user:{},
         }
         this.handleIsLogged = this.handleIsLogged.bind(this);
+        this.handleuserdata = this.handleuserdata.bind(this);
+
     }
 
     render() {
         return (
             <Router>
                 {
-                    this.state.isLogged ? <HomePage isLogged={this.state.isLogged} handleIsLogged={this.handleIsLogged}/> : <MainPage isLogged={this.state.isLogged} handleIsLogged={this.handleIsLogged}/>
+                    this.state.isLogged ? 
+                    <HomePage 
+                        isLogged={this.state.isLogged}
+                        user={this.state.user}
+                        roommates={this.state.roommates} 
+                        handleIsLogged={this.handleIsLogged}/> : 
+                    <MainPage 
+                        isLogged={this.state.isLogged} 
+                        user={this.state.user}
+                        handleuserdata={this.handleuserdata}
+                        handleIsLogged={this.handleIsLogged}/>
                 }
+
             </Router>
         );
     }
@@ -32,6 +46,14 @@ export default class App extends React.Component {
                 isLogged: !state.isLogged
             }
         })
+    }
+    handleuserdata(user){
+        this.setState({
+            user:user
+        },()=>{
+            // console.log('helllloooo');
+            this.handleIsLogged();
+        });
     }
 
 }
