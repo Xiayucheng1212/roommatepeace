@@ -6,6 +6,7 @@ import {
 
 import PropTypes from 'prop-types';
 import './UserCircle.css';
+import UserInfo from './UserInfo.jsx';
 
 export default class UserCircle extends React.Component {
     static propTypes = {
@@ -18,19 +19,16 @@ export default class UserCircle extends React.Component {
             
         };
 
-        
+        this.handleClick = this.handleClick.bind(this);
     }
 
     render() {
         return (
             <Router>
-                <div className="circle">
+                <div className="circle" onClick={this.handleClick}>
                     {/*  name */}
                     <div className="name">
-                        <Alert color="danger">
-                           {/* TODO */}
-                            {this.props.user.user_name}
-                        </Alert>
+                        <UserInfo user={this.props.user}/>
                     </div>
                     {/*  state */}
                     <div className="state">
@@ -44,4 +42,7 @@ export default class UserCircle extends React.Component {
         );
     }
 
+    handleClick(){
+        
+    }
 }

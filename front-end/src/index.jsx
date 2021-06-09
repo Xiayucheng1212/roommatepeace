@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 window.onload = function() {
 
     ReactDOM.render(
-            <HomePage />,
+        <HomePage />,
         document.getElementById('root')
     );
 };

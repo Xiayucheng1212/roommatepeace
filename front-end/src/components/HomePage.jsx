@@ -104,9 +104,9 @@ export default class HomePage extends React.Component {
     }
 
     async componentDidMount(){
-       const res = await getUsers(0);
+       const res = await getUsers(1);
        const res1 = await getSingleUser(3);
-       const notifications = await getroomnotification(0);
+       const notifications = await getroomnotification(1);
        this.setState({
            users: res.data,
            notifications: notifications.data,
