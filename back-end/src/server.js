@@ -6,7 +6,7 @@ const userRouter = require('./routers/users.js');
 const notificationRouter = require('./routers/notifications.js');
 const complainRouter = require('./routers/complains.js');
 const roomRouter = require('./routers/rooms.js');
-
+const loginRouter = require('./routers/login.js');
 const requestLogger = require('./middleware/request-logger.js');
 const errorHandler = require('./middleware/error-handler.js');
 const accessController = require('./middleware/access-controller.js');
@@ -28,6 +28,7 @@ app.use('/user', userRouter);
 app.use('/notification', notificationRouter);
 app.use('/complain', complainRouter);
 app.use('/room', roomRouter);
+app.use('/log',loginRouter);
 app.get('/*', (req, res) => res.redirect('/'));
 app.use(errorHandler);
 
