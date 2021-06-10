@@ -106,9 +106,12 @@ export default class HomePage extends React.Component {
     }
 
     async componentDidMount(){
-    console.log(this.props.user.data[0].room_id);
-       const res = await getUsers(this.props.user.data[0].room_id);
-       const notifications = await getroomnotification(this.props.user.data[0].room_id);
+       const res = await getUsers(1);
+       const res1 = await getSingleUser(3);
+       const notifications = await getroomnotification(1);
+    // console.log(this.props.user.data[0].room_id);
+    //    const res = await getUsers(this.props.user.data[0].room_id);
+    //    const notifications = await getroomnotification(this.props.user.data[0].room_id);
        this.setState({
            roommates: res.data,
            notifications: notifications.data,
