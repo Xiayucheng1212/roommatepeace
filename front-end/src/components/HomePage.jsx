@@ -32,8 +32,7 @@ export default class HomePage extends React.Component {
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
         this.handleComplainToggle = this.handleComplainToggle(this);
-        this.handleUserProfileToggle = this.handleUserProfileToggle(this);
-
+        this.writeConsole = this.writeConsole.bind(this)
     }
 
     render() {
@@ -76,6 +75,7 @@ export default class HomePage extends React.Component {
                         </div>
                         {/* roommates */}
                         <div className="container roommates">
+                            
                             {
                                 this.state.roommates.map((item, index)=>{
                                     console.log(item);
@@ -87,13 +87,14 @@ export default class HomePage extends React.Component {
                         </div>
                         {/* profile and write */}
                         <div className="container foot">
-                            <span className="profile" onClick={this.handleUserProfileToggle}>
+                            <span className="profile" onClick={this.writeConsole}>
                                 <img class="profileIcon" src="images/user.png" alt=""/>
                             </span>
                             <span className="write">
                                 
                             </span>
                         </div>
+                        <UserProfile  userProfileToggle={this.state.userProfileToggle} user={this.props.user} />
                     </div>
             </Router>
         );
@@ -107,18 +108,17 @@ export default class HomePage extends React.Component {
         })
     }
 
+    writeConsole() {
+        this.setState((state, props) => {
+            return {
+                userProfileToggle: !state.userProfileToggle
+            }
+        })
+    }
     handleComplainToggle() {
         this.setState((state, props) => {
             return {
                 complainToggle: !state.complainToggle
-            }
-        })
-    }
-
-    handleUserProfileToggle(){
-        this.setState((state, props) => {
-            return {
-                userProfileToggle: !state.userProfileToggle
             }
         })
     }
