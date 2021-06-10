@@ -7,7 +7,11 @@ const service = axios.create({
 })
 
 export function checkLogin(email,password){
-    let url = `${userBaseUrl}/checklogin?email=${email}&password=${password}`
+    // let url = `${userBaseUrl}/checklogin?email=${email}&password=${password}`
     // return service.get('/getroom', {params:{room_id}})
-    return axios.get(url);
+    let url = `${userBaseUrl}/checklogin`
+    return axios.post(url,{
+        email: email,
+        password: password
+    });
 }

@@ -61,12 +61,12 @@ export default class App extends React.Component {
                 isLogged: !state.isLogged
             }
         })
+        console.log("llllll");
     }
     handleuserdata(user) {
         this.setState({
-            user: user
-        }, () => {
-            // console.log('helllloooo');
+            user:user
+        },()=>{
             this.handleIsLogged();
         });
     }
