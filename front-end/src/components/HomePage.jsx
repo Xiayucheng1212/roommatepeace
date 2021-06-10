@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
     Alert
@@ -7,6 +7,7 @@ import {
 import {PropTypes} from 'prop-types';
 import './HomePage.css';
 import UserCircle from './UserCircle.jsx';
+import UserProfile from './UserProfile.jsx';
 import {getUsers,getSingleUser} from '../api/users';
 import {getroomnotification} from '../api/notifications';
 export default class HomePage extends React.Component {
@@ -24,67 +25,76 @@ export default class HomePage extends React.Component {
             complains: [],
             notificationToggle: false,
             complainToggle: false,
+            userProfileToggle: false,
             // main_user:[],
             
         };
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
         this.handleComplainToggle = this.handleComplainToggle(this);
+        this.handleUserProfileToggle = this.handleUserProfileToggle(this);
+
     }
 
     render() {
+        var UserProfilePath = {
+            pathname:'/userProfile',
+            state:{
+                message: "hello worllllllllld"
+            }
+        }
         return (
             <Router>
-                <div className="main ">
-                    {/* notification */}
-                    <div className="container">
-                        <ButtonDropdown isOpen={this.state.notificationToggle} toggle={this.handleNotificationToggle}>
-                            <DropdownToggle caret color="#ffffff">
-                               {
-                                   this.state.notificationNum > 0 &&
-                                   this.state.notifications[0].text
-                               }
-                            </DropdownToggle>
-                            <DropdownMenu>
-                                {
-                                    this.state.notificationNum >= 1 &&
-                                    this.state.notifications.map((item,index)=>{
-                                        if(index >= 1){
-                                            return (<DropdownItem>{item.text}</DropdownItem>)
-                                        }
-                                    })
-                                }
-                            </DropdownMenu>
-                        </ButtonDropdown>
+                    <div className="main ">
+                        {/* notification */}
+                        <div className="container">
+                            <ButtonDropdown isOpen={this.state.notificationToggle} toggle={this.handleNotificationToggle}>
+                                <DropdownToggle caret color="#ffffff">
+                                   {
+                                       this.state.notificationNum > 0 &&
+                                       this.state.notifications[0].text
+                                   }
+                                </DropdownToggle>
+                                <DropdownMenu>
+                                    {
+                                        this.state.notificationNum >= 1 &&
+                                        this.state.notifications.map((item,index)=>{
+                                            if(index >= 1){
+                                                return (<DropdownItem>{item.text}</DropdownItem>)
+                                            }
+                                        })
+                                    }
+                                </DropdownMenu>
+                            </ButtonDropdown>
+                        </div>
+                        {/*  complain */}
+                        <div className="container">
+                            <Alert color="danger" onClick={this.handleComplainToggle}>
+                               {/* TODO */}
+                                This is a danger alert — check it out!
+                            </Alert>
+                        </div>
+                        {/* roommates */}
+                        <div className="container roommates">
+                            {
+                                this.state.roommates.map((item, index)=>{
+                                    console.log(item);
+                                    return(
+                                        <UserCircle user={item}/>
+                                    )
+                                })
+                            }
+                        </div>
+                        {/* profile and write */}
+                        <div className="container foot">
+                            <span className="profile" onClick={this.handleUserProfileToggle}>
+                                <img class="profileIcon" src="images/user.png" alt=""/>
+                            </span>
+                            <span className="write">
+                                
+                            </span>
+                        </div>
                     </div>
-                    {/*  complain */}
-                    <div className="container">
-                        <Alert color="danger" onClick={this.handleComplainToggle}>
-                           {/* TODO */}
-                            This is a danger alert — check it out!
-                        </Alert>
-                    </div>
-                    {/* roommates */}
-                    <div className="container roommates">
-                        {
-                            this.state.roommates.map((item, index)=>{
-                                console.log(item);
-                                return(
-                                    <UserCircle user={item}/>
-                                )
-                            })
-                        }
-                    </div>
-                    {/* profile and write */}
-                    <div className="container foot">
-                        <span className="profile">
-                            {this.props.user.photo}
-                        </span>
-                        <span className="write">
-                            
-                        </span>
-                    </div>
-                </div>
             </Router>
         );
     }
@@ -101,6 +111,14 @@ export default class HomePage extends React.Component {
         this.setState((state, props) => {
             return {
                 complainToggle: !state.complainToggle
+            }
+        })
+    }
+
+    handleUserProfileToggle(){
+        this.setState((state, props) => {
+            return {
+                userProfileToggle: !state.userProfileToggle
             }
         })
     }

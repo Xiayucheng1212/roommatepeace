@@ -50,7 +50,7 @@ export default class Login extends React.Component {
     checkIsLoggin(){
         console.log(this.email,this.password);
         if(!this.props.isLogged){
-            checkLogin("123123@gmail.com","qwer").then(user=>{
+            checkLogin("111@gmail.com","123123").then(user=>{
                 console.log(user);
                 this.setState(()=>this.handleuserdata(user));
             })

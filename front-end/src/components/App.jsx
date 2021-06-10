@@ -10,9 +10,9 @@ export default class App extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state={
-            isLogged:false,
-            user:{},
+        this.state = {
+            isLogged: false,
+            user: {},
         }
         this.handleIsLogged = this.handleIsLogged.bind(this);
         this.handleuserdata = this.handleuserdata.bind(this);
@@ -20,37 +20,52 @@ export default class App extends React.Component {
     }
 
     render() {
+        // var homePagePath={
+        //     pathname:'/homePage',
+        //     state:{
+        //         isLogged: this.state.isLogged,
+        //         user: this.state.user,
+        //         roommates: this.state.roommates,
+        //         handleIsLogged: this.handleIsLogged
+        //     }
+        // }
         return (
             <Router>
                 {
-                    this.state.isLogged ? 
-                    <HomePage 
-                        isLogged={this.state.isLogged}
-                        user={this.state.user}
-                        roommates={this.state.roommates} 
-                        handleIsLogged={this.handleIsLogged}/> : 
-                    <MainPage 
-                        isLogged={this.state.isLogged} 
-                        user={this.state.user}
-                        handleuserdata={this.handleuserdata}
-                        handleIsLogged={this.handleIsLogged}/>
+                    this.state.isLogged ?
+                        <HomePage
+                            isLogged={this.state.isLogged}
+                            user={this.state.user}
+                            roommates={this.state.roommates}
+                            handleIsLogged={this.handleIsLogged} /> :
+                        <MainPage
+                            isLogged={this.state.isLogged}
+                            user={this.state.user}
+                            handleuserdata={this.handleuserdata}
+                            handleIsLogged={this.handleIsLogged} />
                 }
 
+
+                {/* <Route exact path="/">
+                    {this.state.isLogged ? <Redirect to="/homePage" /> :  <Redirect to="/mainPage" /> }
+                </Route>
+                <Route exact path={homePagePath} component={HomePage}></Route>
+                <Route exact path="/mainPage" component={MainPage}></Route> */}
             </Router>
         );
     }
 
-    handleIsLogged(){
-        this.setState((state,props)=>{
+    handleIsLogged() {
+        this.setState((state, props) => {
             return {
                 isLogged: !state.isLogged
             }
         })
     }
-    handleuserdata(user){
+    handleuserdata(user) {
         this.setState({
-            user:user
-        },()=>{
+            user: user
+        }, () => {
             // console.log('helllloooo');
             this.handleIsLogged();
         });
