@@ -17,3 +17,24 @@ export function getSingleUser(id){
     // return service.get('/getroom', {params:{room_id}})
     return axios.get(url);
 }
+export function creatUser(name,email,password,color,reminder){
+    let url = `${userBaseUrl}/create`
+    // return service.get('/getroom', {params:{room_id}})
+    const newuser = {
+        email:email,
+        name:name,
+        password:password,
+        reminder:reminder,
+        color:color,
+        photo:"uuu"
+    };
+    return axios.post(url,{
+        email:email,
+        name:name,
+        password:password,
+        reminder:reminder,
+        color:color,
+        photo:"uuu"
+    });
+    //return newuser;
+}

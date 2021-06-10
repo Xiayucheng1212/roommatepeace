@@ -18,7 +18,8 @@ export default class Login extends React.Component {
         this.state = {
             isLogged:props.isLogged,
             password:NaN,
-            email: NaN
+            email: NaN,
+            history:props.history
         };
 
         this.checkIsLoggin = this.checkIsLoggin.bind(this);
@@ -30,12 +31,11 @@ export default class Login extends React.Component {
         return (
             <Router>
                 <div className="main ">
-                    hello login
+                    Login
                 </div>
-                <button onClick={this.handleEmail}>Email</button>
-                <button onClick={this.handlePassword}>Password</button>
-                <button onClick={this.checkIsLoggin}>send login</button>
-                <Form inline onSubmit={this.checkIsLoggin}>
+                <div className="Login">
+                    <h2>Login</h2>
+                <Form  classname="form" inline onSubmit={this.checkIsLoggin}>
                     <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                         <Label for="exampleEmail" className="mr-sm-2">Email</Label>
                         <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" onChange={this.handleEmail} />
@@ -46,26 +46,31 @@ export default class Login extends React.Component {
                     </FormGroup>
                     <Button>Submit</Button>
                 </Form>
+                </div>
             </Router>
         );
     }
     handleEmail(e){
-        console.log(e);
-        console.log("wwwww");
+        // console.log(e);
+        // console.log("wwwww");
         this.setState({email:e.target.value});
     }
     handlePassword(e){
         this.setState({password:e.target.value});
     }
 
-    checkIsLoggin(){
+    checkIsLoggin(event){
+        event.preventDefault();
         console.log(this.state.email,this.state.password);
         if(!this.props.isLogged){
             checkLogin(this.state.email,this.state.password).then(user=>{
-                //console.log(user);
-                this.setState(()=>this.handleuserdata(user));
+                console.log(user);
+                window.history.back();
+                this.setState({
+                },()=>this.handleuserdata(user));
             })
         }
+        // history.back();
     }
     handleuserdata(user){
         // console.log(user);

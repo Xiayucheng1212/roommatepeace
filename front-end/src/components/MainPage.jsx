@@ -49,7 +49,13 @@ export default class MainPage extends React.Component {
                                 )}
                             />
                             {/* 完成驗證之後 傳送callback向上更新 */}
-                            <Route path="/signUp" component={SignUp} />
+                            <Route 
+                                path="/signUp" 
+                                //component={SignUp}
+                                render={()=>(
+                                    <SignUp handleuserdata={this.props.handleuserdata}/>
+                                  )}
+                            />
                         </Switch>
                     </div>
                 </div>
