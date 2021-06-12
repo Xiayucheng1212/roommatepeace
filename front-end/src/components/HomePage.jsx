@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
     Alert
@@ -22,6 +22,12 @@ export default class HomePage extends React.Component {
     }
 
     render() {
+        var UserProfilePath = {
+            pathname:'/userProfile',
+            state:{
+                message: "hello worllllllllld"
+            }
+        }
         return (
             <Router>
                 <div>hello</div>
