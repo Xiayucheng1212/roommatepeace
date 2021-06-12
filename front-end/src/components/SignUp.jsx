@@ -6,7 +6,7 @@ import {
 
 import './SignUp.css';
 import {PropTypes} from 'prop-types';
-import {creatUser} from '../api/users';
+import {createUser} from '../api/users';
 
 export default class SignUp extends React.Component {
     static propTypes = {
@@ -115,7 +115,7 @@ export default class SignUp extends React.Component {
     handleSignUp(event){
         // console.log(this.state.name,this.state.email,this.state.password,this.state.color,this.state.reminder);
         event.preventDefault();
-        creatUser(this.state.name,this.state.email,this.state.password,this.state.color,this.state.reminder).then(user=>{
+        createUser(this.state.name,this.state.email,this.state.password,this.state.color,this.state.reminder).then(user=>{
             window.history.back();
             this.setState({
                 // history: history.back()
@@ -128,7 +128,7 @@ export default class SignUp extends React.Component {
     }
     handleuserdata(user){
         //console.log(user);
-        this.props.handleuserdata(user);    
+        this.props.handleuserdata(user.data);    
     }
 
 }

@@ -28,6 +28,7 @@ export default class App extends React.Component {
                         isLogged={this.state.isLogged}
                         user={this.state.user}
                         roommates={this.state.roommates} 
+                        handleuserdata={this.handleuserdata}
                         handleIsLogged={this.handleIsLogged}/> : 
                     <MainPage 
                         isLogged={this.state.isLogged} 
@@ -42,12 +43,14 @@ export default class App extends React.Component {
     handleIsLogged(){
         this.setState((state,props)=>{
             return {
-                isLogged: !state.isLogged
+                // isLogged: !state.isLogged
+                isLogged: true
             }
         })
-        console.log("llllll");
     }
     handleuserdata(user){
+        console.log("llllll");
+        console.log(user);
         this.setState({
             user:user
         },()=>{
