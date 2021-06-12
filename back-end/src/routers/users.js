@@ -38,6 +38,18 @@ router.post('/create', function (req, res, next) {
     })
     .catch(next);
 });
+// Update
+router.post(
+  '/updateuserroom',
+  function (req, res, next) {
+    userModel
+      .updateuserroom(req.body)
+      .then((user) => {
+        res.json(user);
+      })
+      .catch(next);
+  }
+);
 
 // Update
 router.post(
