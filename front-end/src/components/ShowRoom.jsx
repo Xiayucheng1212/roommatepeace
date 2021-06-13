@@ -79,7 +79,7 @@ export default class ShowRoom extends React.Component {
                             this.state.roommates.map((item, index)=>{
                                 console.log(item);
                                 return(
-                                    <UserCircle user={item}/>
+                                    <UserCircle user={item} mainuser={this.props.user}/>
                                 )
                             })
                         }
@@ -124,7 +124,6 @@ export default class ShowRoom extends React.Component {
 
     async componentDidMount(){
         console.log(this.props.user.room_id);
-        console.log("eeeeeee");
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);

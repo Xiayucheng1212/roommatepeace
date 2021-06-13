@@ -28,7 +28,7 @@ export default class UserCircle extends React.Component {
                 <div className="circle" onClick={this.handleClick}>
                     {/*  name */}
                     <div className="name">
-                        <UserInfo user={this.props.user}/>
+                        <UserInfo user={this.props.user} mainuser={this.props.mainuser}/>
                     </div>
                     {/*  state */}
                     <div className="state">

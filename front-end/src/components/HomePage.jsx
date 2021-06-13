@@ -33,9 +33,10 @@ export default class HomePage extends React.Component {
                 <div className='container'>
                     <Navbar color="light" light expand="md">
                         <NavbarBrand>RoommatePeace</NavbarBrand>
+                        
                         <Nav navbar>
                             <NavItem>
-                                <NavLink>Hello User</NavLink>
+                                <NavLink>Hello {this.props.user.name}</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink>signOut</NavLink>
@@ -44,7 +45,7 @@ export default class HomePage extends React.Component {
                     </Navbar>
                 </div>
                 {
-                    this.props.user.room_id == undefined ? 
+                    this.props.user.room_id == 0 ? 
                     <CreateRoom 
                         user={this.props.user}
                         handleuserdata={this.props.handleuserdata}/> : 
