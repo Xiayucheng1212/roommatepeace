@@ -19,7 +19,6 @@ export default class Login extends React.Component {
             isLogged:props.isLogged,
             password:NaN,
             email: NaN,
-            history:props.history
         };
 
         this.checkIsLoggin = this.checkIsLoggin.bind(this);
@@ -30,9 +29,6 @@ export default class Login extends React.Component {
     render() {
         return (
             <Router>
-                <div className="main ">
-                    Login
-                </div>
                 <div className="Login">
                     <h2>Login</h2>
                 <Form  classname="form" inline onSubmit={this.checkIsLoggin}>
@@ -74,6 +70,6 @@ export default class Login extends React.Component {
     }
     handleuserdata(user){
         // console.log(user);
-        this.props.handleuserdata(user);    
+        this.props.handleuserdata(user.data[0]);    
     }
 }

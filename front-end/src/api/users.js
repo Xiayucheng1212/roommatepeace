@@ -17,17 +17,9 @@ export function getSingleUser(id){
     // return service.get('/getroom', {params:{room_id}})
     return axios.get(url);
 }
-export function creatUser(name,email,password,color,reminder){
+export function createUser(name,email,password,color,reminder){
     let url = `${userBaseUrl}/create`
     // return service.get('/getroom', {params:{room_id}})
-    const newuser = {
-        email:email,
-        name:name,
-        password:password,
-        reminder:reminder,
-        color:color,
-        photo:"uuu"
-    };
     return axios.post(url,{
         email:email,
         name:name,
@@ -35,6 +27,15 @@ export function creatUser(name,email,password,color,reminder){
         reminder:reminder,
         color:color,
         photo:"uuu"
+    });
+    //return newuser;
+}
+export function updateUser(user_id,room_id){
+    let url = `${userBaseUrl}/updateuserroom`
+    // return service.get('/getroom', {params:{room_id}})
+    return axios.post(url,{
+        id:user_id,
+        room_id:room_id
     });
     //return newuser;
 }

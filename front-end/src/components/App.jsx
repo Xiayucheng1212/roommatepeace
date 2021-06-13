@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-ro
 import { } from '../api/users';
 import MainPage from './MainPage.jsx'
 import HomePage from './HomePage.jsx'
-import Login from './Login.jsx'
 
 export default class App extends React.Component {
     constructor(props) {
@@ -32,17 +31,18 @@ export default class App extends React.Component {
         return (
             <Router>
                 {
-                    this.state.isLogged ?
-                        <HomePage
-                            isLogged={this.state.isLogged}
-                            user={this.state.user}
-                            roommates={this.state.roommates}
-                            handleIsLogged={this.handleIsLogged} /> :
-                        <MainPage
-                            isLogged={this.state.isLogged}
-                            user={this.state.user}
-                            handleuserdata={this.handleuserdata}
-                            handleIsLogged={this.handleIsLogged} />
+                    this.state.isLogged ? 
+                    <HomePage 
+                        isLogged={this.state.isLogged}
+                        user={this.state.user}
+                        roommates={this.state.roommates} 
+                        handleuserdata={this.handleuserdata}
+                        handleIsLogged={this.handleIsLogged}/> : 
+                    <MainPage 
+                        isLogged={this.state.isLogged} 
+                        user={this.state.user}
+                        handleuserdata={this.handleuserdata}
+                        handleIsLogged={this.handleIsLogged}/>
                 }
 
 
@@ -58,10 +58,10 @@ export default class App extends React.Component {
     handleIsLogged() {
         this.setState((state, props) => {
             return {
-                isLogged: !state.isLogged
+                // isLogged: !state.isLogged
+                isLogged: true
             }
         })
-        console.log("llllll");
     }
     handleuserdata(user) {
         this.setState({

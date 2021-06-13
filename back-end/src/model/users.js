@@ -31,7 +31,7 @@ if (!global.db) {
   function createuser(user) {
     const sql = `
           INSERT INTO users (name,email,password,color,reminder,state,expect,photo)
-          VALUES (\'${user.name}\',\'${user.email}\',\'${user.password}\',\'${user.color}\',\'${user.reminder}\',\'${user.state}\',\'${user.expect}\',\'${user.photo}\')
+          VALUES (\'${user.name}\',\'${user.email}\',\'${user.password}\',\'${user.color}\',\'${user.reminder}\',\'at home\',\'nothing\',\'${user.photo}\')
           RETURNING *
       `;
       console.log(sql);
@@ -42,18 +42,30 @@ if (!global.db) {
     const sql = `
           UPDATE users
           SET name = \'${user.name}\', email = \'${user.email}\', password=\'${user.password}\', color = \'${user.color}\', reminder = \'${user.reminder}\', state = \'${user.state}\', expect = \'${user.expect}\', photo = \'${user.photo}\'
-          WHERE id = \'${user.id}\'
+          WHERE id = ${user.id}
           RETURNING *
       `;
     console.log(sql);
     return db.one(sql);
   }
   
+  //update user room
+  function updateuserroom(user) {
+    const sql = `
+          UPDATE users
+          SET room_id = \'${user.room_id}\'
+          WHERE id = ${user.id}
+          RETURNING *
+      `;
+    console.log(sql);
+    return db.one(sql);
+  }
   
 
 module.exports = {
   getsingleuser,
   getroomusers,
   createuser,
-  updateuser
+  updateuser,
+  updateuserroom
 };

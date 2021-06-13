@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    Alert
+    Alert, Navbar, Nav, NavbarBrand, NavItem, NavLink
 } from 'reactstrap';
 
 import {PropTypes} from 'prop-types';
@@ -33,30 +33,36 @@ export default class MainPage extends React.Component {
         return (
             <Router>
                 <div className="main ">
-
-                    <button onClick={this.props.handleIsLogged}>hiiiiiiiii</button>
-                    <Link to="/login" >login</Link>
-                    <Link to="/signUp">signUp</Link>
-
+                    <div className='container'>
+                        <Navbar color="light" light expand="md">
+                            <NavbarBrand href="/login">RoommatePeace</NavbarBrand>
+                            <Nav navbar>
+                                <NavItem>
+                                    <NavLink tag={Link} to="/login" >login</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink tag={Link} to="/signUp">signUp</NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Navbar>
+                    </div>
                     <div className="container">
                         <Switch>
-                            <Route
-                                exact
-                                path="/login"
+                            <Route exact path="/login"
                                 //component={Login}
                                 render={()=>(
-                                  <Login handleuserdata={this.props.handleuserdata}/>
+                                    <Login handleuserdata={this.props.handleuserdata}/>
                                 )}
                             />
                             {/* 完成驗證之後 傳送callback向上更新 */}
-                            <Route 
-                                path="/signUp" 
+                            <Route path="/signUp" 
                                 //component={SignUp}
                                 render={()=>(
                                     <SignUp handleuserdata={this.props.handleuserdata}/>
-                                  )}
+                                )}
                             />
                         </Switch>
+                        <button onClick={this.props.handleIsLogged}>test</button>
                     </div>
                 </div>
             </Router>
