@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    Alert
+    Alert, Navbar, Nav, NavbarBrand, NavItem, NavLink
 } from 'reactstrap';
 import {PropTypes} from 'prop-types';
 import './HomePage.css';
@@ -30,10 +30,21 @@ export default class HomePage extends React.Component {
         }
         return (
             <Router>
-                <div>hello</div>
-                {/* <ShowRoom user={this.props.user}/> */}
+                <div className='container'>
+                    <Navbar color="light" light expand="md">
+                        <NavbarBrand>RoommatePeace</NavbarBrand>
+                        <Nav navbar>
+                            <NavItem>
+                                <NavLink>Hello User</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink>signOut</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Navbar>
+                </div>
                 {
-                    this.props.user.room_id == 0 ? 
+                    this.props.user.room_id == undefined ? 
                     <CreateRoom 
                         user={this.props.user}
                         handleuserdata={this.props.handleuserdata}/> : 

@@ -44,7 +44,6 @@ export default class ShowRoom extends React.Component {
         }
         return (
             <Router>
-                <div>hello</div>
                 <div className="main ">
                     {/* notification */}
                     <div className="container">

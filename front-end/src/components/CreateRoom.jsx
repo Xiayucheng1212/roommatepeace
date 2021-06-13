@@ -31,23 +31,22 @@ export default class CreateRoom extends React.Component{
     render(){
         return (
             <Router>
-                <div className="main ">
-                    CreateRoom
-                </div>
-                <div className="CreateRoom">
-                    <h2>CreateRoom</h2>
-                    <InputGroup>
-                        <Input type="text" name="name" onChange={this.handleRoomName}/>
-                        <InputGroupAddon addonType="append"><Button  color="secondary" onClick={this.handleCreateRoom}>Create</Button></InputGroupAddon>
-                    </InputGroup>
-                </div>
-                <br/>
-                <div className="EnterRoom">
-                    <h2>EnterRoom</h2>
-                    <InputGroup>
-                        <Input type="number" name="room_id" onChange={this.handleRoomid}/>
-                        <InputGroupAddon addonType="append"><Button color="secondary" onClick={this.handleEnterRoom}>Enter</Button></InputGroupAddon>
-                    </InputGroup>
+                <div className="form">
+                    <div className="CreateRoom">
+                        <h2>CreateRoom</h2>
+                        <InputGroup>
+                            <Input type="text" name="name" onChange={this.handleRoomName}/>
+                            <InputGroupAddon addonType="append"><Button  color="secondary" onClick={this.handleCreateRoom}>Create</Button></InputGroupAddon>
+                        </InputGroup>
+                    </div>
+                    <br/>
+                    <div className="EnterRoom">
+                        <h2>EnterRoom</h2>
+                        <InputGroup>
+                            <Input type="number" name="room_id" onChange={this.handleRoomid}/>
+                            <InputGroupAddon addonType="append"><Button color="secondary" onClick={this.handleEnterRoom}>Enter</Button></InputGroupAddon>
+                        </InputGroup>
+                    </div>
                 </div>
             </Router>
         );
@@ -71,7 +70,7 @@ export default class CreateRoom extends React.Component{
         createRoom(this.state.name).then(room=>{
             // window.history.back();            
             this.setState({
-                room_id:room.data.id
+                room_id: room.data.id
             },()=>{
                 // console.log(this.state.room_id);
                 // console.log("fuckk");

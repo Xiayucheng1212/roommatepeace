@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-ro
 import { } from '../api/users';
 import MainPage from './MainPage.jsx'
 import HomePage from './HomePage.jsx'
-import Login from './Login.jsx'
 
 export default class App extends React.Component {
     constructor(props) {

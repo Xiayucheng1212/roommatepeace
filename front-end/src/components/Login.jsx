@@ -29,9 +29,6 @@ export default class Login extends React.Component {
     render() {
         return (
             <Router>
-                <div className="main ">
-                    Login
-                </div>
                 <div className="Login">
                     <h2>Login</h2>
                 <Form  classname="form" inline onSubmit={this.checkIsLoggin}>
