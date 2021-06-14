@@ -82,7 +82,7 @@ export default class ShowRoom extends React.Component {
                             this.state.roommates.map((item, index)=>{
                                 console.log(item);
                                 return(
-                                    <UserCircle user={item}/>
+                                    <UserCircle user={item} index={index}/>
                                 )
                             })
                         }

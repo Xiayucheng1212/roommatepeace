@@ -3,13 +3,14 @@
     /* width: 180px; */
     width: 35%;
     background-color: pink;
-    color: black;
+    /* color: black; */
     padding-top: 30px;
+    position:absolute
 }
 .name ,.state{
     text-align: center;
     width: 60%;
     height: 25%;
     margin:auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
