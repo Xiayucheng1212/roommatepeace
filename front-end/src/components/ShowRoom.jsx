@@ -80,9 +80,9 @@ export default class ShowRoom extends React.Component {
                     <div className="container roommates">
                         {
                             this.state.roommates.map((item, index)=>{
-                                console.log(item);
+                                console.log(index);
                                 return(
-                                    <UserCircle user={item} index={index}/>
+                                    <UserCircle user={item} index={index} userNum={this.state.userNum}/>
                                 )
                             })
                         }
@@ -139,11 +139,15 @@ export default class ShowRoom extends React.Component {
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
-            this.setState({
+        this.setState({
             roommates: res.data,
             notifications: notifications.data,
             notificationNum: notifications.data.length,
+            userNum:res.data.length
         })
+        // console.log(this.state.userNum);
+        console.log((90-360/3*1)/360*2*Math.PI);
+        console.log(Math.sin((90-360/3*1)/360*2*Math.PI));
     }
 
 
