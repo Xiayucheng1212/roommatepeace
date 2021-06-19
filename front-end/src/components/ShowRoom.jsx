@@ -8,6 +8,7 @@ import {PropTypes} from 'prop-types';
 import './ShowRoom.css';
 import UserCircle from './UserCircle.jsx';
 import UserProfile from './UserProfile.jsx';
+import WriteComplain from './WriteComplain.jsx';
 import {getUsers,getSingleUser} from '../api/users';
 import {getroomnotification} from '../api/notifications';
 export default class ShowRoom extends React.Component {
@@ -26,13 +27,15 @@ export default class ShowRoom extends React.Component {
             notificationToggle: false,
             userProfileToggle: false,
             complainToggle: false,
+            writeComplainToggle: false
             // main_user:[],
             
         };
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
         this.handleComplainToggle = this.handleComplainToggle(this);
-        this.writeConsole = this.writeConsole.bind(this)
+        this.writeConsole = this.writeConsole.bind(this);
+        this.writeComplain = this.writeComplain.bind(this);
     }
 
     render() {
@@ -84,16 +87,17 @@ export default class ShowRoom extends React.Component {
                             })
                         }
                     </div>
-                     {/* profile and write */}
-                     <div className="container foot">
-                            <span className="profile" onClick={this.writeConsole}>
-                                <img class="profileIcon" src="images/user.png" alt=""/>
-                            </span>
-                            <span className="write">
+                    {/* profile and write */}
+                    <div className="container foot">
+                        <span className="profile" onClick={this.writeConsole}>
+                            <img class="profileIcon" src="images/user.png" alt=""/>
+                        </span>
+                        <span className="write" onClick={this.writeComplain}>
 
-                            </span>
-                        </div>
-                        <UserProfile userProfileToggle={this.state.userProfileToggle} user={this.props.user} />
+                        </span>
+                    </div>
+                    <UserProfile userProfileToggle={this.state.userProfileToggle} user={this.props.user} />
+                    <WriteComplain writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
                 </div>
             </Router>
         );
@@ -118,6 +122,13 @@ export default class ShowRoom extends React.Component {
         this.setState((state, props) => {
             return {
                 userProfileToggle: !state.userProfileToggle
+            }
+        })
+    }
+    writeComplain() {
+        this.setState((state, props) => {
+            return {
+                writeComplainToggle: !state.writeComplainToggle
             }
         })
     }

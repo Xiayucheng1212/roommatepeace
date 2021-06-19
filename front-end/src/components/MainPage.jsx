@@ -62,7 +62,6 @@ export default class MainPage extends React.Component {
                                 )}
                             />
                         </Switch>
-                        <button onClick={this.props.handleIsLogged}>test</button>
                     </div>
                 </div>
             </Router>
