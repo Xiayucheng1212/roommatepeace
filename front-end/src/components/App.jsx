@@ -58,8 +58,7 @@ export default class App extends React.Component {
     handleIsLogged() {
         this.setState((state, props) => {
             return {
-                // isLogged: !state.isLogged
-                isLogged: true
+                isLogged: !state.isLogged
             }
         })
     }
@@ -67,7 +66,7 @@ export default class App extends React.Component {
         this.setState({
             user:user
         },()=>{
-            this.handleIsLogged();
+            if(this.state.isLogged==false) this.handleIsLogged();
         });
     }
 

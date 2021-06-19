@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import {
-    Alert, Form, FormGroup,Label,Input, Button
+    Alert, Form, FormGroup, Label, Input, Button
 } from 'reactstrap';
 
 import './UserProfile.css';
@@ -11,7 +11,8 @@ export default class UserProfile extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         location: PropTypes.object,
-        userProfileToggle: PropTypes.bool
+        userProfileToggle: PropTypes.bool,
+        handleuserdata: PropTypes.func
     };
     constructor(props) {
         super(props);

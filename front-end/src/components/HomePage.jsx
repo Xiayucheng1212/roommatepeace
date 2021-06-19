@@ -11,7 +11,8 @@ import ShowRoom from "./ShowRoom.jsx";
 export default class HomePage extends React.Component {
     static propTypes = {
         user: PropTypes.object,
-        handleuserdata:PropTypes.func
+        handleuserdata:PropTypes.func,
+        handleIsLogged:PropTypes.func
     };
     constructor(props) {
         super(props);
@@ -39,7 +40,7 @@ export default class HomePage extends React.Component {
                                 <NavLink>Hello {this.props.user.name}</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink>signOut</NavLink>
+                                <NavLink onClick={this.props.handleIsLogged}>signOut</NavLink>
                             </NavItem>
                         </Nav>
                     </Navbar>
@@ -50,7 +51,8 @@ export default class HomePage extends React.Component {
                         user={this.props.user}
                         handleuserdata={this.props.handleuserdata}/> : 
                     <ShowRoom 
-                        user={this.props.user}/>
+                        user={this.props.user}
+                        handleuserdata={this.props.handleuserdata}/>
                 }
             </Router>
         );
