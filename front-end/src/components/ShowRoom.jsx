@@ -143,10 +143,8 @@ export default class ShowRoom extends React.Component {
             roommates: res.data,
             notifications: notifications.data,
             notificationNum: notifications.data.length,
-            userNum:res.data.length
+            userNum: res.data.length
         })
         // console.log(this.state.userNum);
-        console.log((90-360/3*1)/360*2*Math.PI);
-        console.log(Math.sin((90-360/3*1)/360*2*Math.PI));
     }
 }

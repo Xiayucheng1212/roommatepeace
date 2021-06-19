@@ -1,8 +1,8 @@
 .circle{
     border-radius: 50%;
-    width: 230px;
+    width: 160px;
     /* width: 35%; */
-    height: 230px;
+    height: 160px;
     background-color: pink;
     padding-top: 30px;
     position:absolute
@@ -10,7 +10,7 @@
 .name ,.state{
     text-align: center;
     width: 60%;
-    height: 25%;
+    height: 15%;
     margin:auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
