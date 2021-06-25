@@ -38,11 +38,9 @@ export default class UserProfile extends React.Component {
                             <FormGroup>
                                 <Label for="state">Select</Label>
                                 <Input type="select" name="select" id="state">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                    <option>Sleeping</option>
+                                    <option>Not Home</option>
+                                    <option>At Home</option>
                                 </Input>
                             </FormGroup>
                             <FormGroup>
