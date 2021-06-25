@@ -80,7 +80,6 @@ export default class ShowRoom extends React.Component {
                     <div className="container roommates">
                         {
                             this.state.roommates.map((item, index)=>{
-                                console.log(index);
                                 return(
                                     <UserCircle user={item} index={index} 
                                         userNum={this.state.userNum} mainuser={this.props.user}/>
