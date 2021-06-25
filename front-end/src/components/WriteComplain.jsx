@@ -20,7 +20,7 @@ export default class WriteComplain extends React.Component {
         super(props);
 
         this.state = {
-            problem:"",
+            problem:"聲音類",
             reason :"",
             towhom :"",
             expect:"",
