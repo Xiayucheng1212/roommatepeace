@@ -35,7 +35,6 @@ export default class App extends React.Component {
                     <HomePage 
                         isLogged={this.state.isLogged}
                         user={this.state.user}
-                        roommates={this.state.roommates} 
                         handleuserdata={this.handleuserdata}
                         handleIsLogged={this.handleIsLogged}/> : 
                     <MainPage 

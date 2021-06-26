@@ -11,6 +11,7 @@ export default class UserProfile extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         location: PropTypes.object,
+        handleUserProfileToggle: PropTypes.func,
         userProfileToggle: PropTypes.bool,
         handleuserdata: PropTypes.func
     };
@@ -33,6 +34,8 @@ export default class UserProfile extends React.Component {
                 <div className="position-absolute top-50 start-50 translate-middle userProfile">
                     <div>
                         <Alert color="info">Change</Alert>
+                    </div>
+                    <div className="close" onClick={this.props.handleUserProfileToggle}>
                     </div>
                     <div className="icon">
 
@@ -94,7 +97,9 @@ export default class UserProfile extends React.Component {
     handleSubmit(event){
         event.preventDefault();
         updateUser(this.state.userX).then(user=>{
+            console.log(user);
             this.props.handleuserdata(user.data);
+            this.props.handleUserProfileToggle();
         })
     }
 }
