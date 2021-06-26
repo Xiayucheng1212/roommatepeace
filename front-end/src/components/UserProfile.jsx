@@ -7,7 +7,6 @@ import {
 import './UserProfile.css';
 import { PropTypes } from 'prop-types';
 import {updateUser} from '../api/users.js';
-import './UserProfile.css';
 export default class UserProfile extends React.Component {
     static propTypes = {
         user: PropTypes.object,
@@ -23,7 +22,7 @@ export default class UserProfile extends React.Component {
         };
 
         this.handleColor = this.handleColor.bind(this);
-        this.handleChageState = this.handleChageState.bind(this);
+        this.handleChangeState = this.handleChangeState.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -39,7 +38,7 @@ export default class UserProfile extends React.Component {
 
                     </div>
                     <div className="setting">
-                        <Form onSubmit={this.handleSubmit}>
+                        <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
                                 <Label for="state">Select</Label>
                                 <Input type="select" name="select" id="state">
@@ -83,16 +82,17 @@ export default class UserProfile extends React.Component {
             }
         })
     }
-    handleChageState(e){
+    handleChangeState(e){
         this.setState((state,prop)=>{
             var _user = state.userX;
             _user.state = e.target.value
             return{
                 userX: _user
             }
-        },console.log(this.state.userX));
+        });
     }
-    handleSubmit(){
+    handleSubmit(event){
+        event.preventDefault();
         updateUser(this.state.userX).then(user=>{
             this.props.handleuserdata(user.data);
         })
