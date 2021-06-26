@@ -18,7 +18,7 @@ export default class UserCircle extends React.Component {
         super(props);
 
         this.state = {
-            userInfoToggle: false
+            userInfoToggle: false,
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -27,7 +27,7 @@ export default class UserCircle extends React.Component {
     render() {
         return (
             <Router> 
-                <div className="circle" onClick={this.handleClick} 
+                <div className={this.state.mouseEnterClass ? "circle-big" : "circle"} onClick={this.handleClick}
                     style={{
                         backgroundColor: this.props.user.color,
                         left:document.body.clientWidth/2-80+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,

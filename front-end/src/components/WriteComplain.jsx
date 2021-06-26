@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import {
     Alert, Form, FormGroup,Label,Input, Button
 } from 'reactstrap';
+import {createComplain} from "../api/complains.js";
 
 import './WriteComplain.css';
 import { PropTypes } from 'prop-types';
@@ -14,6 +15,7 @@ export default class WriteComplain extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         writeComplainToggle: PropTypes.bool,
+        handleWriteComplainToggle: PropTypes.func,
         roommates:PropTypes.array
     };
     constructor(props) {
@@ -21,12 +23,17 @@ export default class WriteComplain extends React.Component {
 
         this.state = {
             problem:"聲音類",
+<<<<<<< HEAD
             reason :"",
+=======
+            reason :"鬧鐘",
+>>>>>>> 9199ecf5ca74ea6134790083bfd0c393efd149b2
             towhom :"",
-            expect:"",
+            expect:"1",
             reasonOption:voicereason,
             expectOption:[],
         };
+        
         
 
         this.handleProblem = this.handleProblem.bind(this);
@@ -35,6 +42,18 @@ export default class WriteComplain extends React.Component {
         this.handleTowhom = this.handleTowhom.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+    componentDidMount(){
+        if(this.props.roommates.length <= 1){
+            console.log(123);
+            this.setState({
+                towhom: this.props.user.id //
+            })
+        }else{
+            this.setState({
+                towhom: this.props.roommates[0].id
+            })
+        }
+    }
 
     render() {
         var content;
@@ -42,7 +61,8 @@ export default class WriteComplain extends React.Component {
             content =
                 <div className="position-absolute top-50 start-50 translate-middle writeComplain">
                     <div className="icon">
-
+                    </div>
+                    <div className="close" onClick={this.props.handleWriteComplainToggle}>
                     </div>
                     <div className="setting">
                         <Form onSubmit={this.handleSubmit}>
@@ -79,10 +99,11 @@ export default class WriteComplain extends React.Component {
                                 <Input type="select" name="towhom" id="towhom" onChange={this.handleTowhom}>
                                     {
                                         this.props.roommates.map((item, index)=>{
-                                            // console.log(item);
-                                            return(
-                                                <option>{item.user_name}</option>
-                                            )
+                                           if(item.id !== this.props.user.id){
+                                                return(
+                                                    <option key={index} value={item.id}>{item.user_name}</option>
+                                                )
+                                           }
                                         })
                                     }
                                 </Input>
@@ -127,7 +148,18 @@ export default class WriteComplain extends React.Component {
     handleExpect(e){
         this.setState({expect:e.target.value})
     }
-    handleSubmit(){
-
+    handleSubmit(e){
+        e.preventDefault();
+        createComplain({
+            from_user: this.props.user.id,
+            to_user: this.state.towhom,
+            problem: this.state.problem,
+            reason: this.state.reason,
+            expect: this.state.expect
+        }).then((cpl)=>{
+            console.log(cpl);
+            this.props.handleWriteComplainToggle();
+        })
     }
+
 }

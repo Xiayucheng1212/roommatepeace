@@ -14,6 +14,7 @@ import {getroomnotification} from '../api/notifications';
 export default class ShowRoom extends React.Component {
     static propTypes = {
         user: PropTypes.object,
+        handleuserdata: PropTypes.func
     };
     constructor(props) {
         super(props);
@@ -33,9 +34,9 @@ export default class ShowRoom extends React.Component {
         };
 
         this.handleNotificationToggle = this.handleNotificationToggle.bind(this);
-        this.handleComplainToggle = this.handleComplainToggle(this);
-        this.writeConsole = this.writeConsole.bind(this);
-        this.writeComplain = this.writeComplain.bind(this);
+        this.handleComplainToggle = this.handleComplainToggle.bind(this);
+        this.handleUserProfileToggle = this.handleUserProfileToggle.bind(this);
+        this.handleWriteComplainToggle = this.handleWriteComplainToggle.bind(this);
     }
 
     render() {
@@ -89,15 +90,15 @@ export default class ShowRoom extends React.Component {
                     </div>
                     {/* profile and write */}
                     <div className="container foot">
-                        <span className="profile" onClick={this.writeConsole}>
+                        <span className="profile" onClick={this.handleUserProfileToggle}>
                             <img class="profileIcon" src="images/user.png" alt=""/>
                         </span>
-                        <span className="write" onClick={this.writeComplain}>
+                        <span className="write" onClick={this.handleWriteComplainToggle}>
 
                         </span>
                     </div>
-                    <UserProfile userProfileToggle={this.state.userProfileToggle} user={this.props.user} handleuserdata={this.props.handleuserdata} />
-                    <WriteComplain writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
+                    <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle}  user={this.props.user} handleuserdata={this.props.handleuserdata} />
+                    <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
                 </div>
             </Router>
         );
@@ -118,14 +119,16 @@ export default class ShowRoom extends React.Component {
             }
         })
     }
-    writeConsole() {
+
+    handleUserProfileToggle(){
+        console.log(1123123);
         this.setState((state, props) => {
             return {
                 userProfileToggle: !state.userProfileToggle
             }
         })
     }
-    writeComplain() {
+    handleWriteComplainToggle() {
         this.setState((state, props) => {
             return {
                 writeComplainToggle: !state.writeComplainToggle
@@ -134,10 +137,10 @@ export default class ShowRoom extends React.Component {
     }
 
     async componentDidMount(){
-        console.log(this.props.user.room_id);
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
+      
         this.setState({
             roommates: res.data,
             notifications: notifications.data,

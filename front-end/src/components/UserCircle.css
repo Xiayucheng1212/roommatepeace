@@ -5,7 +5,8 @@
     height: 160px;
     background-color: pink;
     padding-top: 30px;
-    position:absolute
+    position:absolute;
+    transition: 0.5s;
 }
 .name ,.state{
     text-align: center;
@@ -13,4 +14,8 @@
     height: 15%;
     margin:auto;
     margin-bottom: 10px;
+}
+
+.circle:hover{
+    transform: scale(1.1);
 }
