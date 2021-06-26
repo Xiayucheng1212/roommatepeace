@@ -97,11 +97,7 @@ export default class UserProfile extends React.Component {
     handleSubmit(event){
         event.preventDefault();
         updateUser(this.state.userX).then(user=>{
-<<<<<<< HEAD
-            // console.log(user.data);
-=======
             console.log(user);
->>>>>>> 9199ecf5ca74ea6134790083bfd0c393efd149b2
             this.props.handleuserdata(user.data);
             this.props.handleUserProfileToggle();
         })

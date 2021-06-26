@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import {
-    ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
+    ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,Button,
     Alert
 } from 'reactstrap';
 import {PropTypes} from 'prop-types';
@@ -9,6 +9,7 @@ import './ShowRoom.css';
 import UserCircle from './UserCircle.jsx';
 import UserProfile from './UserProfile.jsx';
 import WriteComplain from './WriteComplain.jsx';
+import WriteNotification from './WriteNotification.jsx';
 import {getUsers,getSingleUser} from '../api/users';
 import {getroomnotification} from '../api/notifications';
 export default class ShowRoom extends React.Component {
@@ -28,7 +29,8 @@ export default class ShowRoom extends React.Component {
             notificationToggle: false,
             userProfileToggle: false,
             complainToggle: false,
-            writeComplainToggle: false
+            writeComplainToggle: false,
+            writeNotificationToggle: false
             // main_user:[],
             
         };
@@ -37,6 +39,7 @@ export default class ShowRoom extends React.Component {
         this.handleComplainToggle = this.handleComplainToggle.bind(this);
         this.handleUserProfileToggle = this.handleUserProfileToggle.bind(this);
         this.handleWriteComplainToggle = this.handleWriteComplainToggle.bind(this);
+        this.handleWriteNotificationToggle = this.handleWriteNotificationToggle.bind(this);
     }
 
     render() {
@@ -53,10 +56,11 @@ export default class ShowRoom extends React.Component {
                     <div className="container">
                         <ButtonDropdown isOpen={this.state.notificationToggle} toggle={this.handleNotificationToggle}>
                             <DropdownToggle caret color="#ffffff">
+                            
                                {
                                    this.state.notificationNum > 0 &&
                                    this.state.notifications[0].text
-                               }
+                                }
                             </DropdownToggle>
                             <DropdownMenu>
                                 {
@@ -83,10 +87,10 @@ export default class ShowRoom extends React.Component {
                             this.state.roommates.map((item, index)=>{
                                 return(
                                     <UserCircle user={item} index={index} 
-                                        userNum={this.state.userNum} mainuser={this.props.user}/>
-                                )
-                            })
-                        }
+                                    userNum={this.state.userNum} mainuser={this.props.user}/>
+                                    )
+                                })
+                            }
                     </div>
                     {/* profile and write */}
                     <div className="container foot">
@@ -96,9 +100,13 @@ export default class ShowRoom extends React.Component {
                         <span className="write" onClick={this.handleWriteComplainToggle}>
 
                         </span>
+                        <span className="write" onClick={this.handleWriteNotificationToggle}>
+
+                        </span>
                     </div>
                     <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle}  user={this.props.user} handleuserdata={this.props.handleuserdata} />
                     <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
+                    <WriteNotification handleWriteNotificationToggle={this.handleWriteNotificationToggle} writeNotificationToggle={this.state.writeNotificationToggle} user={this.props.user} />
                 </div>
             </Router>
         );
@@ -108,6 +116,14 @@ export default class ShowRoom extends React.Component {
         this.setState((state, props) => {
             return {
                 notificationToggle: !state.notificationToggle
+            }
+        })
+    }
+    handleWriteNotificationToggle() {
+        console.log("lll");
+        this.setState((state, props) => {
+            return {
+                writeNotificationToggle: !state.writeNotificationToggle
             }
         })
     }
