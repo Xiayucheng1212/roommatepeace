@@ -10,7 +10,7 @@ import {
 import {PropTypes} from 'prop-types';
 import './HomePage.css';
 import {createRoom} from "../api/room.js"
-import {updateUser} from "../api/users.js"
+import {updateUserRoom} from "../api/users.js"
 export default class CreateRoom extends React.Component{
     static propTypes = {
         user: PropTypes.object,
@@ -58,7 +58,7 @@ export default class CreateRoom extends React.Component{
         this.setState({room_id:e.target.value});
     }
     handleEnterRoom(){
-        updateUser(this.props.user.id,this.state.room_id).then(user=>{
+        updateUserRoom(this.props.user.id,this.state.room_id).then(user=>{
             // console.log(user);
             // console.log("ppppp");
             this.props.handleuserdata(user.data);
@@ -76,7 +76,7 @@ export default class CreateRoom extends React.Component{
                 // console.log("fuckk");
                 // console.log(this.props.user.data[0].id);
                 // event.preventDefault()
-                updateUser(this.props.user.id,room.data.id).then(user=>{
+                updateUserRoom(this.props.user.id,room.data.id).then(user=>{
                     // console.log(user);
                     // console.log("ppppp");
                     this.props.handleuserdata(user.data);

@@ -6,7 +6,8 @@ import {
 
 import './UserProfile.css';
 import { PropTypes } from 'prop-types';
-
+import {updateUser} from '../api/users.js';
+import './UserProfile.css';
 export default class UserProfile extends React.Component {
     static propTypes = {
         user: PropTypes.object,
@@ -18,11 +19,12 @@ export default class UserProfile extends React.Component {
         super(props);
 
         this.state = {
-
+            userX: this.props.user
         };
 
         this.handleColor = this.handleColor.bind(this);
-        this.handleSubmit = this.handleSubmit(this);
+        this.handleChageState = this.handleChageState.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     render() {
@@ -30,6 +32,9 @@ export default class UserProfile extends React.Component {
         if (this.props.userProfileToggle) {
             content =
                 <div className="position-absolute top-50 start-50 translate-middle userProfile">
+                    <div>
+                        <Alert color="info">Change</Alert>
+                    </div>
                     <div className="icon">
 
                     </div>
@@ -53,7 +58,7 @@ export default class UserProfile extends React.Component {
                                     onChange={this.handleColor}
                                 />
                             </FormGroup>
-                            <Button>Submit</Button>
+                            <Button outline color="primary">Submit</Button>
                         </Form>
                     </div>
                 </div>;
@@ -71,14 +76,25 @@ export default class UserProfile extends React.Component {
 
     handleColor(e){
         this.setState((state,prop)=>{
-            var _user = state.user;
+            var _user = state.userX;
             _user.color = e.target.value
             return{
-                user: _user
+                userX: _user
             }
         })
     }
+    handleChageState(e){
+        this.setState((state,prop)=>{
+            var _user = state.userX;
+            _user.state = e.target.value
+            return{
+                userX: _user
+            }
+        },console.log(this.state.userX));
+    }
     handleSubmit(){
-
+        updateUser(this.state.userX).then(user=>{
+            this.props.handleuserdata(user.data);
+        })
     }
 }

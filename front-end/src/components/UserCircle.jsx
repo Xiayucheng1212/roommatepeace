@@ -55,6 +55,5 @@ export default class UserCircle extends React.Component {
                 userInfoToggle: !state.userInfoToggle
             }
         })
-        console.log("K");
     }
 }
