@@ -12,6 +12,7 @@ export function checkLogin(email,password){
     let url = `${userBaseUrl}/checklogin`
     return axios.post(url,{
         email: email,
-        password: password
+        password: password,
+        // islogged: true
     });
 }

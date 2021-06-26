@@ -35,7 +35,7 @@ export default class MainPage extends React.Component {
                 <div className="main ">
                     <div className='container'>
                         <Navbar color="light" light expand="md">
-                            <NavbarBrand href="/login">RoommatePeace</NavbarBrand>
+                            <NavbarBrand >RoommatePeace</NavbarBrand>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink tag={Link} to="/login" >login</NavLink>
@@ -62,7 +62,6 @@ export default class MainPage extends React.Component {
                                 )}
                             />
                         </Switch>
-                        <button onClick={this.props.handleIsLogged}>test</button>
                     </div>
                 </div>
             </Router>

@@ -11,26 +11,26 @@ import './UserInfo.css';
 
 export default class UserInfo extends React.Component {
     static propTypes = {
-        user: PropTypes.object
+        user: PropTypes.object,
+        toggle: PropTypes.bool
     };
     constructor(props) {
         super(props);
 
         this.state = {
-            modal: false
         };
 
         this.handleClick = this.handleClick.bind(this);
-        const closeBtn = <button className="close" onClick={this.handleClick}>&times;</button>;
+        const externalCloseBtn = <button className="close" style={{ position: 'absolute', top: '15px', right: '15px' }}>&times;</button>;
     }
 
     render() {
-        return (
-            <Router>
+        var content;
+        if (this.props.toggle) {
+            content =
                 <div >
-                <Button color="danger" onClick={this.handleClick}>{this.props.user.user_name}</Button>
-                <Modal isOpen={this.state.modal} toggle={this.handleClick}>
-                <ModalHeader toggle={this.handleClick} close={this.closeBtn}>
+                <Modal isOpen={this.props.toggle} toggle={this.props.handleClick} external={this.externalCloseBtn}>
+                <ModalHeader>
                     <CardImg top width="100%" src={this.props.user.photo} alt="Card image cap" />
                 </ModalHeader>
                 <ModalBody>
@@ -44,19 +44,22 @@ export default class UserInfo extends React.Component {
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" onClick={this.handleClick}>change</Button>{' '}
-                    <Button color="secondary" onClick={this.handleClick}>Cancel</Button>
+                    <Button color="secondary" onClick={this.props.handleClick}>Cancel</Button>
                 </ModalFooter>
                 </Modal>
                 </div>
-            </Router>
+        } else {
+            content = '';
+        }
+
+        return (
+            <div>
+                {content}
+            </div>
         );
     }
 
     handleClick() {
-        this.setState((state, props) => {
-            return {
-                modal: !state.modal
-            }
-        })
+        
     }
 }

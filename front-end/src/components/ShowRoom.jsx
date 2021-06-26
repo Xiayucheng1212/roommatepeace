@@ -80,24 +80,24 @@ export default class ShowRoom extends React.Component {
                     <div className="container roommates">
                         {
                             this.state.roommates.map((item, index)=>{
-                                // console.log(index);
                                 return(
-                                    <UserCircle user={item} index={index} userNum={this.state.userNum}/>
+                                    <UserCircle user={item} index={index} 
+                                        userNum={this.state.userNum} mainuser={this.props.user}/>
                                 )
                             })
                         }
                     </div>
-                     {/* profile and write */}
-                     <div className="container foot">
-                            <span className="profile" onClick={this.writeConsole}>
-                                <img class="profileIcon" src="images/user.png" alt=""/>
-                            </span>
-                            <span className="write" onClick={this.writeComplain}>
+                    {/* profile and write */}
+                    <div className="container foot">
+                        <span className="profile" onClick={this.writeConsole}>
+                            <img class="profileIcon" src="images/user.png" alt=""/>
+                        </span>
+                        <span className="write" onClick={this.writeComplain}>
 
-                            </span>
-                        </div>
-                        <UserProfile userProfileToggle={this.state.userProfileToggle} user={this.props.user} />
-                        <WriteComplain writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
+                        </span>
+                    </div>
+                    <UserProfile userProfileToggle={this.state.userProfileToggle} user={this.props.user} handleuserdata={this.props.handleuserdata} />
+                    <WriteComplain writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
                 </div>
             </Router>
         );
@@ -135,7 +135,6 @@ export default class ShowRoom extends React.Component {
 
     async componentDidMount(){
         console.log(this.props.user.room_id);
-        console.log("eeeeeee");
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
@@ -143,12 +142,8 @@ export default class ShowRoom extends React.Component {
             roommates: res.data,
             notifications: notifications.data,
             notificationNum: notifications.data.length,
-            userNum:res.data.length
+            userNum: res.data.length
         })
         // console.log(this.state.userNum);
-        console.log((90-360/3*1)/360*2*Math.PI);
-        console.log(Math.sin((90-360/3*1)/360*2*Math.PI));
     }
-
-
 }

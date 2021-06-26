@@ -7,19 +7,18 @@ import {
 import PropTypes from 'prop-types';
 import './UserCircle.css';
 import UserInfo from './UserInfo.jsx';
-const position=[[0,0],[1,0.5],[0,1],[-1,0.5]];
 const pi = Math.PI*2;
 export default class UserCircle extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         index: PropTypes.number,
-        userNum:PropTypes.number
+        userNum: PropTypes.number
     };
     constructor(props) {
         super(props);
 
         this.state = {
-            
+            userInfoToggle: false
         };
 
         this.handleClick = this.handleClick.bind(this);
@@ -27,20 +26,18 @@ export default class UserCircle extends React.Component {
 
     render() {
         return (
-            <Router>
+            <Router> 
                 <div className="circle" onClick={this.handleClick} 
                     style={{
                         backgroundColor: this.props.user.color,
-                        left:230+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*120,
-                        top:500+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*120
-                        // left:220+180*position[this.props.index][0],
-                        // top:300+180*position[this.props.index][1]
+                        left:document.body.clientWidth/2-80+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,
+                        top:document.body.clientHeight/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
                     }}>
-                    {/*  name */}
                     <div className="name">
-                        <UserInfo user={this.props.user}/>
+                        <h4> {this.props.user.user_name} </h4>
                     </div>
-                    {/*  state */}
+                    <UserInfo user={this.props.user} mainuser={this.props.mainuser} 
+                        toggle={this.state.userInfoToggle} handleClick={this.handleClick} />
                     <div className="state">
                         <Alert color="danger">
                            {/* TODO */}
@@ -53,6 +50,10 @@ export default class UserCircle extends React.Component {
     }
 
     handleClick(){
-        
+        this.setState((state, props) => {
+            return {
+                userInfoToggle: !state.userInfoToggle
+            }
+        })
     }
 }

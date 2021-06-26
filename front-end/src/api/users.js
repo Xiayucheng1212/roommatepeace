@@ -30,12 +30,28 @@ export function createUser(name,email,password,color,reminder){
     });
     //return newuser;
 }
-export function updateUser(user_id,room_id){
+export function updateUserRoom(user_id,room_id){
     let url = `${userBaseUrl}/updateuserroom`
     // return service.get('/getroom', {params:{room_id}})
     return axios.post(url,{
         id:user_id,
         room_id:room_id
+    });
+    //return newuser;
+}
+export function updateUser(user){
+    console.log(user.id);
+    let url = `${userBaseUrl}/update`
+    return axios.post(url,{
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        password: user.password,
+        color: user.color,
+        reminder: user.reminder,
+        state: user.state,
+        expect: user.expect,
+        photo: user.photo,
     });
     //return newuser;
 }

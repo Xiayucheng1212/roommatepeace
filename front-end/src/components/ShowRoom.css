@@ -19,10 +19,9 @@
 .profile,.write{
     display: inline-block;
     border-radius: 50%;
-    /* width: 180px; */
     width: 100px;
     height: 100px;
-    background-color: pink;
+    background-color: rgb(210, 231, 243);
     color: black;
     margin: auto;
 }

@@ -87,7 +87,7 @@ export default class WriteComplain extends React.Component {
                                     }
                                 </Input>
                             </FormGroup>
-                            <Button>Submit</Button>
+                            <Button outline color="info">Submit</Button>
                         </Form>
                     </div>
                 </div>;
