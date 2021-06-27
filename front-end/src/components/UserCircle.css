@@ -1,8 +1,8 @@
 .circle{
     border-radius: 50%;
-    width: 160px;
+    width: 180px;
     /* width: 35%; */
-    height: 160px;
+    height: 180px;
     background-color: pink;
     padding-top: 30px;
     position:absolute;
@@ -18,4 +18,10 @@
 
 .circle:hover{
     transform: scale(1.1);
+}
+.at-home {
+    box-shadow:3px 3px 12px gray;padding:3px;
+}
+.not-at-home {
+    opacity:0.3;
 }
