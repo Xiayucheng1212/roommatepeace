@@ -133,6 +133,10 @@ export default class ShowRoom extends React.Component {
     handleNotificationToggle() {
         this.setState((state, props) => {
             return {
+                userProfileToggle: false,
+                complainToggle: false,
+                writeComplainToggle: false,
+                writeNotificationToggle: false,
                 notificationToggle: !state.notificationToggle
             }
         })
@@ -140,6 +144,10 @@ export default class ShowRoom extends React.Component {
     handleWriteNotificationToggle() {
         this.setState((state, props) => {
             return {
+                notificationToggle: false,
+                userProfileToggle: false,
+                complainToggle: false,
+                writeComplainToggle: false,
                 writeNotificationToggle: !state.writeNotificationToggle
             }
         })
@@ -150,6 +158,10 @@ export default class ShowRoom extends React.Component {
         if(this.state.complainNum == 0) return ;
         this.setState((state, props) => {
             return {
+                notificationToggle: false,
+                userProfileToggle: false,
+                writeComplainToggle: false,
+                writeNotificationToggle: false,
                 complainToggle: !state.complainToggle
             }
         })
@@ -158,6 +170,10 @@ export default class ShowRoom extends React.Component {
     handleUserProfileToggle() {
         this.setState((state, props) => {
             return {
+                notificationToggle: false,
+                complainToggle: false,
+                writeComplainToggle: false,
+                writeNotificationToggle: false,
                 userProfileToggle: !state.userProfileToggle
             }
         })
@@ -165,6 +181,10 @@ export default class ShowRoom extends React.Component {
     handleWriteComplainToggle() {
         this.setState((state, props) => {
             return {
+                notificationToggle: false,
+                userProfileToggle: false,
+                complainToggle: false,
+                writeNotificationToggle: false,
                 writeComplainToggle: !state.writeComplainToggle
             }
         })
