@@ -11,3 +11,9 @@ export function createRoom(name){
         name:name,
     });
 }
+
+export function getRoomname(room_id){
+    console.log("lololol");
+    let url = `${userBaseUrl}/getroomname?room_id=${room_id}`
+    return axios.get(url);
+}
