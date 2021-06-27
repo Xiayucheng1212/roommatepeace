@@ -61,7 +61,6 @@ export default class HomePage extends React.Component {
     
     handleUserRoom(){
         this.setState((state,props)=>{
-            console.log("oOOOOOOO");
             // return {
                 
             // }

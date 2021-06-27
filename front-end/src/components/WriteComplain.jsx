@@ -50,7 +50,6 @@ export default class WriteComplain extends React.Component {
     }
     componentDidMount(){
         if(this.props.roommates.length <= 1){
-            console.log(123);
             this.setState({
                 towhom: this.props.user.id //
             })
@@ -120,7 +119,6 @@ export default class WriteComplain extends React.Component {
 
     }
     handleProblem(e){
-        console.log(e)
         var reasonOp;
         if(e.target.value == "聲音類"){
             reasonOp = voicereason;
@@ -186,11 +184,11 @@ export default class WriteComplain extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         // console.log("ppppp");
-        // console.log(this.props.user.id,
-        //     this.state.towhom,
-        //     this.state.problem,
-        //     this.state.reason,
-        //    this.state.expect);
+        console.log(this.props.user.id,
+            this.state.towhom,
+            this.state.problem,
+            this.state.reason,
+           this.state.expect);
         createComplain({
             from_user: this.props.user.id,
             to_user: this.state.towhom,

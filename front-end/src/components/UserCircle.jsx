@@ -27,8 +27,6 @@ export default class UserCircle extends React.Component {
     }
 
     render() {
-        console.log("llll");
-        console.log(this.props.user);
         return (
             <Router> 
                 <div className={this.state.mouseEnterClass ? "circle-big" : "circle"} onClick={this.handleClick}

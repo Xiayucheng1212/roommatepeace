@@ -59,18 +59,14 @@ export default class WriteNotification extends React.Component {
 
     }
     handleNotification(e){
-        console.log(e);
         this.setState({notification:e.target.value});
     }
     handleSubmit(e){
         e.preventDefault();
-        console.log("ppppp");
-        console.log(this.props.user);
         createNotification({
             room_id:this.props.user.room_id,
             text: this.state.notification
         }).then((cpl)=>{
-            console.log(cpl);
             this.props.handleWriteNotificationToggle();
         })
     }

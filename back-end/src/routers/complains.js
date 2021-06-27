@@ -31,10 +31,10 @@ router.post('/create', function (req, res, next) {
 });
 //delete
 router.post('/delete', function (req, res, next) {
-    const {id} =req.body
+    const {id,userID} =req.body
     console.log(res.body);
 	complainModel
-      .deletecomplains(id)
+      .deletecomplains(id,userID)
       .then((complain) => {
           res.json(complain);
     })
