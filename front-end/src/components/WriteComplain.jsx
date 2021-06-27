@@ -97,7 +97,7 @@ export default class WriteComplain extends React.Component {
                                         this.props.roommates.map((item, index)=>{
                                            if(item.id !== this.props.user.id){
                                                 return(
-                                                    <option key={index} value={item.id}>{item.user_name}</option>
+                                                    <option key={index} value={item.id}>{item.name}</option>
                                                 )
                                            }
                                         })
