@@ -18,3 +18,17 @@ export function createComplain(data){
     });
 
 }
+
+export function getcomplain(user){
+    let url = `${complainBaseUrl}/getcomplain?to_user=${user}`
+    // return service.get('/getroom', {params:{room_id}})
+    return axios.get(url);
+}
+
+export function deleteComplain(data){
+    let url = `${complainBaseUrl}/delete`;
+    return axios.post(url,{
+        id:data.id
+    });
+
+}

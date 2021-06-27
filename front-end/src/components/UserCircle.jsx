@@ -19,19 +19,22 @@ export default class UserCircle extends React.Component {
 
         this.state = {
             userInfoToggle: false,
+            width:document.body.clientWidth,
+            height:document.body.clientHeight
         };
 
         this.handleClick = this.handleClick.bind(this);
     }
 
     render() {
+        // console.log("llll");
         return (
             <Router> 
                 <div className={this.state.mouseEnterClass ? "circle-big" : "circle"} onClick={this.handleClick}
                     style={{
                         backgroundColor: this.props.user.color,
-                        left:document.body.clientWidth/2-80+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,
-                        top:document.body.clientHeight/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
+                        left:/*document.body.clientWidth*/this.state.width/2-80+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,
+                        top:/*document.body.clientHeight*/this.state.height/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
                     }}>
                     <div className="name">
                         <h4> {this.props.user.user_name} </h4>
@@ -48,7 +51,15 @@ export default class UserCircle extends React.Component {
             </Router>
         );
     }
-
+    async componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+    }
+    async componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
+    }
+    updateDimensions = () => {
+        this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
     handleClick(){
         this.setState((state, props) => {
             return {
