@@ -109,15 +109,15 @@ export default class ShowRoom extends React.Component {
                     <div className="container foot">
                         
                         <span className="write" onClick={this.handleWriteComplainToggle} style={{backgroundColor:this.props.user.color}}>
-                            <img class="profileIcon" src="images/pencil.png" alt="" />
+                            <img class="profileIcon" src="images/writing.png" alt="" />
                             <div className="word">Complain</div>
                         </span>
                         <span className="profile" onClick={this.handleUserProfileToggle} style={{backgroundColor:this.props.user.color}}>
-                            <img class="profileIcon" src="images/user.png" alt="" />
+                            <img class="profileIcon" src="images/anonymous.png" alt="" />
                             <div className="word">Profile</div>
                         </span>
                         <span className="write" onClick={this.handleWriteNotificationToggle} style={{backgroundColor:this.props.user.color}}> 
-                            <img class="profileIcon" src="images/notification.png" alt="" />
+                            <img class="profileIcon" src="images/notification1.png" alt="" />
                             <div className="word">Notification</div>
                         </span>
                     </div>

@@ -11,6 +11,8 @@
 }
 .foot{
     margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     position: fixed;
     bottom: 40px;
     display: flex;

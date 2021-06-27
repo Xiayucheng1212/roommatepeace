@@ -32,7 +32,7 @@ export default class HomePage extends React.Component {
         return (
             <Router>
                 <div className='container'>
-                    <Navbar color="light" light expand="md">
+                    <Navbar color="light" light expand="md" >
                         <NavbarBrand>
                             RoommatePeace
                         </NavbarBrand>
@@ -42,7 +42,7 @@ export default class HomePage extends React.Component {
                                 <NavLink>Hello {this.props.user.name}</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink onClick={this.props.handleIsLogged}>signOut</NavLink>
+                                <NavLink onClick={this.props.handleIsLogged} class="sign-out">signOut</NavLink>
                             </NavItem>
                         </Nav>
                     </Navbar>

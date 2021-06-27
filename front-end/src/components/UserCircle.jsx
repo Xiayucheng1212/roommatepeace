@@ -41,10 +41,9 @@ export default class UserCircle extends React.Component {
                         {this.props.user.user_name != undefined ? this.props.user.user_name : this.props.user.name}
                         </div>
                         <div className="state">
-                            <Alert color="danger">
-                                {/* TODO */}
+                            
                                 {this.props.user.state}
-                            </Alert>
+                            
                         </div>
                     </div>
                     <UserInfo user={this.props.user} mainuser={this.props.mainuser}

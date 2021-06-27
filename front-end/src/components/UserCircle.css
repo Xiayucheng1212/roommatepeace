@@ -11,16 +11,29 @@
 .name ,.state{
     text-align: center;
     margin:auto;
-    margin-bottom: 10px;
+    
+    text-decoration: underline;
+    
 }
 .name{
     font-size: 18px;
     font-weight: 500;
+    text-decoration-thickness: 3px;
+    margin-bottom: 10px;
+}
+
+.state{
+    line-height: 63px;
+    background-image: url(images/calendar1.png);
+    background-size: 92% 108%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 56px;
 }
 
 .userInfo{
     width: 95px;
-    transform: translateY(-50%) translateX(41%);
+    transform: translateY(-50%) translateX(42%);
     position: absolute;
     top: 50%;
 }
