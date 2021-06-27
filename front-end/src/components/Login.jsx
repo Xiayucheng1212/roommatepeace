@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import {
-    Button, Form, FormGroup, Label, Input
+    Button, Form, FormGroup, Label, Input,Fade
 } from 'reactstrap';
 
 import './Login.css';
