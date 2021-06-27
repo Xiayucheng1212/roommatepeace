@@ -34,7 +34,7 @@ export default class UserCircle extends React.Component {
                         top:document.body.clientHeight/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
                     }}>
                     <div className="name">
-                        <h4> {this.props.user.user_name} </h4>
+                        <h4> {this.props.user.name} </h4>
                     </div>
                     <UserInfo user={this.props.user} mainuser={this.props.mainuser} 
                         toggle={this.state.userInfoToggle} handleClick={this.handleClick} />

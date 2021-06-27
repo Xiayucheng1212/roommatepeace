@@ -82,11 +82,13 @@ export default class ShowRoom extends React.Component {
                         {
                             this.state.roommates.map((item, index)=>{
                                 return(
-                                    <UserCircle user={item} index={index} 
+                                    <UserCircle user={item} index={index+1} 
                                         userNum={this.state.userNum} mainuser={this.props.user}/>
                                 )
                             })
                         }
+                        <UserCircle user={this.props.user} index={0}
+                                        userNum={this.state.userNum} mainuser={this.props.user}/>
                     </div>
                     {/* profile and write */}
                     <div className="container foot">
@@ -140,12 +142,16 @@ export default class ShowRoom extends React.Component {
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
-      
+        const roommates = res.data.filter((item)=>{
+            if(item.id != this.props.user.id){
+                return true;
+            }
+        })
         this.setState({
-            roommates: res.data,
+            roommates: roommates,
             notifications: notifications.data,
             notificationNum: notifications.data.length,
-            userNum: res.data.length
+            userNum: roommates+1
         })
         // console.log(this.state.userNum);
     }
