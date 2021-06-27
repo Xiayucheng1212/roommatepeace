@@ -29,10 +29,11 @@ export default class UserCircle extends React.Component {
     render() {
         return (
             <Router> 
-                <div className={this.state.mouseEnterClass ? "circle-big" : "circle"} onClick={this.handleClick}
+                <div className={`${this.state.mouseEnterClass ? "circle-big" : "circle"} ${this.props.user.state == "not home" ?"not-at-home":"at-home"}`}
+                    onClick={this.handleClick}
                     style={{
                         backgroundColor: this.props.user.color,
-                        left:/*document.body.clientWidth*/this.state.width/2-80+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,
+                        left:/*document.body.clientWidth*/this.state.width/2-100+Math.cos((90-360*this.props.index/this.props.userNum)*pi/360)*100,
                         top:/*document.body.clientHeight*/this.state.height/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
                     }}>
                     <div className="name">

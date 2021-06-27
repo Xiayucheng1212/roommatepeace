@@ -44,10 +44,11 @@ export default class UserProfile extends React.Component {
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
                                 <Label for="state">Select</Label>
-                                <Input type="select" name="select" id="state">
-                                    <option>Sleeping</option>
-                                    <option>Not Home</option>
-                                    <option>At Home</option>
+                                <Input type="select" name="select" id="state" onChange = {this.handleChangeState}>
+                                    <option>sleeping</option>
+                                    <option>not home</option>
+                                    <option>at home</option>
+                                    
                                 </Input>
                             </FormGroup>
                             <FormGroup>
