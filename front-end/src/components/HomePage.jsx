@@ -33,7 +33,9 @@ export default class HomePage extends React.Component {
             <Router>
                 <div className='container'>
                     <Navbar color="light" light expand="md">
-                        <NavbarBrand>RoommatePeace</NavbarBrand>
+                        <NavbarBrand>
+                            RoommatePeace
+                        </NavbarBrand>
                         
                         <Nav navbar>
                             <NavItem>

@@ -37,7 +37,9 @@ export default class MainPage extends React.Component {
                 <div className="main ">
                     <div className='container'>
                         <Navbar color="light" light expand="md">
-                            <NavbarBrand >RoommatePeace</NavbarBrand>
+                            <NavbarBrand >
+                                RoommatePeace
+                            </NavbarBrand>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink tag={Link} to="/login" >login</NavLink>
@@ -47,6 +49,7 @@ export default class MainPage extends React.Component {
                                 </NavItem>
                             </Nav>
                         </Navbar>
+                        {this.props.isLogged == false?<img src="images/logo.png" alt="" />:""}
                     </div>
                     <div className="container">
                         <Switch>
