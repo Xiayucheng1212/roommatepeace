@@ -10,14 +10,23 @@
 }
 .name ,.state{
     text-align: center;
-    width: 60%;
-    height: 15%;
     margin:auto;
     margin-bottom: 10px;
 }
+.name{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.userInfo{
+    width: 95px;
+    transform: translateY(-50%) translateX(41%);
+    position: absolute;
+    top: 50%;
+}
 
 .circle:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .at-home {
     box-shadow:3px 3px 12px gray;padding:3px;

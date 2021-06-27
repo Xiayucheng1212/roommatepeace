@@ -12,7 +12,9 @@ export default class Complain extends React.Component {
     static propTypes = {
         handleComplainToggle: PropTypes.func,
         complainToggle: PropTypes.bool,
-        complain: PropTypes.array
+        complain: PropTypes.array,
+        handleComplainUpdate: PropTypes.func,
+        user: PropTypes.object
     };
     constructor(props) {
         super(props);
@@ -25,8 +27,17 @@ export default class Complain extends React.Component {
 
     render() {
         var content;
-        console.log(this.props.complain)
-        if (this.props.complainToggle) {
+        let available;
+        console.log('array');
+        console.log(this.props.complain);
+        if(this.props.complain === undefined){
+            console.log(false);
+            available = false;
+        }else{
+            console.log(this.props.complain.length);
+            available = this.props.complain.length;
+        }
+        if (this.props.complainToggle && available) {
             content = 
                 <div className="complain">
                     <Card body inverse color="danger">
@@ -51,11 +62,14 @@ export default class Complain extends React.Component {
     }
     deleteComplain(e){
         // e.preventDefault();
-        console.log(this.props.complain[0].id);
+        console.log('id: '+ this.props.complain[0].id);
+        console.log(this.props.user);
         deleteComplain({
-           id:this.props.complain[0].id
+           id:this.props.complain[0].id,
+           userID: this.props.user.id
         }).then((item)=>{
             console.log(item);
+            this.props.handleComplainUpdate(item.data);
             this.props.handleComplainToggle();
         })
     }

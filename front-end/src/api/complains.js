@@ -28,7 +28,8 @@ export function getcomplain(user){
 export function deleteComplain(data){
     let url = `${complainBaseUrl}/delete`;
     return axios.post(url,{
-        id:data.id
+        id:data.id,
+        userID: data.userID
     });
 
 }

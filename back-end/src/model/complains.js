@@ -25,11 +25,12 @@ if (!global.db) {
         return db.one(sql);
   }
   //deletecomplains
-  function deletecomplains(id) {
+  function deletecomplains(id, userID) {
     const sql = `
         DELETE 
         FROM complains
-        WHERE id = \'${id}\'
+        WHERE id = \'${id}\';
+        SELECT * FROM complains WHERE to_user = \'${userID}\';
       `;
     console.log(sql);
     return db.any(sql);
