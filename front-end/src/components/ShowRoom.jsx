@@ -26,7 +26,7 @@ export default class ShowRoom extends React.Component {
             notificationNum: 0,
             complainNum:0,
             notifications:[],
-            userNum: 0,
+            userNum: 1,
             roommates: [],
             complains: [],
             notificationToggle: false,
@@ -94,6 +94,8 @@ export default class ShowRoom extends React.Component {
                     <div className="container roommates">
                         {
                             this.state.roommates.map((item, index)=>{
+                                console.log(this.state.userNum);
+                                console.log("ppp");
                                 return(
                                     <UserCircle user={item} index={index+1} 
                                         userNum={this.state.userNum} mainuser={this.props.user}/>
@@ -176,13 +178,14 @@ export default class ShowRoom extends React.Component {
                 return true;
             }
         })
+        // console.log(roommates);
         this.setState({
             roommates: roommates,
             notifications: notifications.data,
             notificationNum: notifications.data.length,
             complain: complain.data,
             complainNum :complain.data.length,
-            userNum: roommates+1
+            userNum: roommates.length+1
         })
         // console.log(this.state.userNum);
     }

@@ -27,7 +27,8 @@ export default class UserCircle extends React.Component {
     }
 
     render() {
-        // console.log("llll");
+        console.log("llll");
+        console.log(this.props.user);
         return (
             <Router> 
                 <div className={this.state.mouseEnterClass ? "circle-big" : "circle"} onClick={this.handleClick}
@@ -37,7 +38,7 @@ export default class UserCircle extends React.Component {
                         top:/*document.body.clientHeight*/this.state.height/2-80+Math.sin((90-360*this.props.index/this.props.userNum)*pi/360)*100
                     }}>
                     <div className="name">
-                        <h4> {this.props.user.name} </h4>
+                        <h4> {this.props.user.user_name != undefined ?this.props.user.user_name:this.props.user.name} </h4>
                     </div>
                     <UserInfo user={this.props.user} mainuser={this.props.mainuser} 
                         toggle={this.state.userInfoToggle} handleClick={this.handleClick} />
