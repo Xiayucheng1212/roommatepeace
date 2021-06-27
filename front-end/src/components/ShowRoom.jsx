@@ -86,7 +86,7 @@ export default class ShowRoom extends React.Component {
                         {/* TODO */}
                         <Alert color={this.state.complainNum!=0?"danger":"success"} onClick={this.handleComplainToggle}>
                             {
-                                (this.state.complainNum != 0)?"This is a danger alert — check it out!":"Have a nice day!"
+                                (this.state.complainNum != 0)?"You have a complain!! — check it out!":"Have a nice day!"
                             }
                         </Alert>
                         
