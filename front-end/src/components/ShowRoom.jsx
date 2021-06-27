@@ -107,14 +107,18 @@ export default class ShowRoom extends React.Component {
                     </div>
                     {/* profile and write */}
                     <div className="container foot">
-                        <span className="profile" onClick={this.handleUserProfileToggle}>
-                            <img class="profileIcon" src="images/user.png" alt=""/>
+                        
+                        <span className="write" onClick={this.handleWriteComplainToggle} style={{backgroundColor:this.props.user.color}}>
+                            <img class="profileIcon" src="images/pencil.png" alt="" />
+                            <div className="word">Complain</div>
                         </span>
-                        <span className="write" onClick={this.handleWriteComplainToggle}>
-
+                        <span className="profile" onClick={this.handleUserProfileToggle} style={{backgroundColor:this.props.user.color}}>
+                            <img class="profileIcon" src="images/user.png" alt="" />
+                            <div className="word">Profile</div>
                         </span>
-                        <span className="write" onClick={this.handleWriteNotificationToggle}>
-
+                        <span className="write" onClick={this.handleWriteNotificationToggle} style={{backgroundColor:this.props.user.color}}> 
+                            <img class="profileIcon" src="images/notification.png" alt="" />
+                            <div className="word">Notification</div>
                         </span>
                     </div>
                     <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle}  user={this.props.user} handleuserdata={this.props.handleuserdata} />
@@ -144,6 +148,7 @@ export default class ShowRoom extends React.Component {
 
     handleComplainToggle() {
         console.log("OOOO");
+        if(this.state.complainNum == 0) return ;
         this.setState((state, props) => {
             return {
                 complainToggle: !state.complainToggle
