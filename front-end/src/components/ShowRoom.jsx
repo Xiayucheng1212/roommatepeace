@@ -62,14 +62,15 @@ export default class ShowRoom extends React.Component {
                     <div className="container">
                         <ButtonDropdown isOpen={this.state.notificationToggle} toggle={this.handleNotificationToggle}>
                             <DropdownToggle caret color="#ffffff">
-                            
+                                <img class="Icon" src="images/larbar.png" alt="" /> ANNOUNCEMENT 
                                {
-                                   this.state.notificationNum > 0 &&
-                                   this.state.notifications[0].text
+                                   
                                 }
                             </DropdownToggle>
                             <DropdownMenu>
-                                {
+                                {   
+                                    this.state.notificationNum > 0 &&
+                                    this.state.notifications[0].text,
                                     this.state.notificationNum >= 1 &&
                                     this.state.notifications.map((item,index)=>{
                                         if(index >= 1){

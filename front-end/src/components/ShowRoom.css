@@ -16,7 +16,10 @@
     display: flex;
     justify-content: space-around;
 }
-
+.Icon {
+    width: 15px;
+    height: 15px;
+}
 .profile,.write{
     display: inline-block;
     border-radius: 50%;
