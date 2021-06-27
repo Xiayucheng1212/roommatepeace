@@ -1332,6 +1332,184 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+<<<<<<< HEAD
+1624691918 ERROR  TypeError: Cannot read property 'id' of undefined
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:19:33)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624691968 ERROR  TypeError: Cannot read property 'id' of undefined
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:19:33)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692050 ERROR  TypeError: Cannot read property '0' of undefined
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:15:38)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692089 ERROR  TypeError: Cannot read property 'id' of undefined
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:20:33)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692106 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692152 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692179 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692317 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692328 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624692458 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624707866 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624707867 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624707867 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624707867 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624707867 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+1624708035 ERROR  TypeError: Assignment to constant variable.
+    at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:17:9)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\layer.js:95:5)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
+    at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
+=======
 1624702229 ERROR  error: invalid input syntax for type integer: "undefined"
     at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
     at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
@@ -1442,3 +1620,4 @@
     at readableAddChunk (_stream_readable.js:271:9)
     at Socket.Readable.push (_stream_readable.js:212:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
+>>>>>>> 9199ecf5ca74ea6134790083bfd0c393efd149b2

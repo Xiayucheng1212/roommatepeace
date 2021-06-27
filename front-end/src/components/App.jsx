@@ -25,6 +25,16 @@ export default class App extends React.Component {
         //         isLogged: this.state.isLogged,
         //         user: this.state.user,
         //         roommates: this.state.roommates,
+        //         handleuserdata:this.handleuserdata,
+        //         handleIsLogged: this.handleIsLogged
+        //     }
+        // }
+        // var mainPagePath={
+        //     pathname:'/mainPage',
+        //     state:{
+        //         isLogged: this.state.isLogged,
+        //         user: this.state.user,
+        //         handleuserdata:this.handleuserdata,
         //         handleIsLogged: this.handleIsLogged
         //     }
         // }
@@ -49,7 +59,7 @@ export default class App extends React.Component {
                     {this.state.isLogged ? <Redirect to="/homePage" /> :  <Redirect to="/mainPage" /> }
                 </Route>
                 <Route exact path={homePagePath} component={HomePage}></Route>
-                <Route exact path="/mainPage" component={MainPage}></Route> */}
+                <Route exact path={mainPagePath} component={MainPage}></Route> */}
             </Router>
         );
     }
@@ -65,7 +75,7 @@ export default class App extends React.Component {
         this.setState({
             user:user
         },()=>{
-            if(this.state.isLogged==false) this.handleIsLogged();
+            if(this.state.isLogged == false) this.handleIsLogged();
         });
     }
 

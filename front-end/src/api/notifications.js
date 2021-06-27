@@ -11,3 +11,12 @@ export function getroomnotification(room_id){
     // return service.get('/getroom', {params:{room_id}})
     return axios.get(url);
 }
+export function createNotification(data){
+    let url = `${userBaseUrl}/create`;
+
+    // return service.get('/getroom', {params:{room_id}})
+    return axios.post(url,{
+        room_id:data.room_id,
+        text:data.text
+    });
+}
