@@ -6,6 +6,7 @@ import {
 } from 'reactstrap';
 import {PropTypes} from 'prop-types';
 import './HomePage.css';
+import { getRoomname } from '../api/room';
 import CreateRoom from "./CreateRoom.jsx";
 import ShowRoom from "./ShowRoom.jsx";
 export default class HomePage extends React.Component {
@@ -17,7 +18,7 @@ export default class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            room_name:""
         };
         this.handleUserRoom = this.handleUserRoom.bind(this);
     }
@@ -34,7 +35,10 @@ export default class HomePage extends React.Component {
                 <div className='container'>
                     <Navbar color="light" light expand="md" >
                         <NavbarBrand>
-                            RoommatePeace
+                            <div style={{fontWeight:'bolder'}}>
+                                {this.state.room_name == ""?"RoommatePeace":this.state.room_name} &nbsp;&nbsp;
+                                {this.props.user.room_id?this.props.user.room_id:""}
+                            </div>
                         </NavbarBrand>
                         
                         <Nav navbar>
@@ -59,7 +63,14 @@ export default class HomePage extends React.Component {
             </Router>
         );
     }
-
+    async componentDidMount(){
+        if(this.props.user.room_id == 0) return;
+        const res = await getRoomname(this.props.user.room_id);
+        console.log(res);
+        this.setState({
+            room_name:res.data.name
+        })
+    }
     
     handleUserRoom(){
         this.setState((state,props)=>{
