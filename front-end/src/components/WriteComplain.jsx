@@ -64,7 +64,7 @@ export default class WriteComplain extends React.Component {
         var content;
         if (this.props.writeComplainToggle) {
             content =
-                <div className="position-absolute top-50 start-50 translate-middle writeComplain" style={{backgroundColor:this.props.user.color}}>
+                <div className="position-absolute top-50 start-50 translate-middle writeComplain">
                     <div className="icon">
                     </div>
                     <div>

@@ -21,3 +21,7 @@
 .form-group{
     margin: 10px !important;
 }
+
+.btn-secondary{
+  margin-left: 12px;
+}

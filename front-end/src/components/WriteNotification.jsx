@@ -32,7 +32,7 @@ export default class WriteNotification extends React.Component {
         var content;
         if (this.props.writeNotificationToggle) {
             content =
-                <div className="position-absolute top-50 start-50 translate-middle writeNotification" style={{backgroundColor:this.props.user.color}}>
+                <div className="position-absolute top-50 start-50 translate-middle writeNotification">
                     <div className="icon">
                     </div>
                     <div>

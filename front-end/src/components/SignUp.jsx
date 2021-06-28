@@ -71,7 +71,7 @@ export default class SignUp extends React.Component {
                             <Label for="examplePhoto">Photo</Label>
                             <Input type="file" name="photo" id="examplePhoto" />
                         </FormGroup> */}
-                        <Button>Submit</Button>
+                        <Button >Submit</Button>
                     </Form>
                 </div>
             </Router>

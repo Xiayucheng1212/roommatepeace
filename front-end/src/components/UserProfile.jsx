@@ -31,7 +31,7 @@ export default class UserProfile extends React.Component {
         var content;
         if (this.props.userProfileToggle) {
             content =
-                <div className="position-absolute top-50 start-50 translate-middle userProfile" style={{backgroundColor:this.props.user.color}}>
+                <div className="position-absolute top-50 start-50 translate-middle userProfile">
                     <div>
                         <Alert color="secondary">Change</Alert>
                     </div>
