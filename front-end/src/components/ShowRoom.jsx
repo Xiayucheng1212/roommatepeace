@@ -88,9 +88,10 @@ export default class ShowRoom extends React.Component {
                         {/* TODO */}
                         <Alert color={this.state.complainNum != 0 ? "danger" : "success"} onClick={this.handleComplainToggle}>
                             {
-                                (this.state.complainNum != 0)?"You have a complain!! — check it out!":"Have a nice day!"
+                                (this.state.complainNum != 0)?"You have a complaint!! — check it out!":"Have a nice day!"
                             }
                         </Alert>
+                        <Complain handleComplainToggle={this.handleComplainToggle} complainToggle={this.state.complainToggle} complain={this.state.complain} handleComplainUpdate={this.handleComplainUpdate} user={this.props.user} />
 
                     </div>
                     {/* roommates */}
@@ -111,7 +112,7 @@ export default class ShowRoom extends React.Component {
                         
                         <span className="write" onClick={this.handleWriteComplainToggle} style={{backgroundColor:this.props.user.color}}>
                             <img class="profileIcon" src="images/writing.png" alt="" />
-                            <div className="word">Complain</div>
+                            <div className="word">Complaint</div>
                         </span>
                         <span className="profile" onClick={this.handleUserProfileToggle} style={{backgroundColor:this.props.user.color}}>
                             <img class="profileIcon" src="images/anonymous.png" alt="" />
@@ -125,7 +126,6 @@ export default class ShowRoom extends React.Component {
                     <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle} user={this.props.user} handleuserdata={this.props.handleuserdata} />
                     <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
                     <WriteNotification handleWriteNotificationToggle={this.handleWriteNotificationToggle} writeNotificationToggle={this.state.writeNotificationToggle} user={this.props.user} handleNotificationUpdate={this.handleNotificationUpdate} />
-                    <Complain handleComplainToggle={this.handleComplainToggle} complainToggle={this.state.complainToggle} complain={this.state.complain} handleComplainUpdate={this.handleComplainUpdate} user={this.props.user} />
                 </div>
             </Router>
         );

@@ -85,6 +85,7 @@ export default class WriteComplain extends React.Component {
                             <FormGroup>
                                 <Label for="reason">Reason</Label>
                                 <Input type="select" name="reason" id="reason" onChange={this.handleReason}>
+                                    <option value="" selected disabled>------</option>
                                     {
                                         this.state.reasonOption.map((item,index)=>{
                                             return <option>{item}</option>
@@ -95,6 +96,7 @@ export default class WriteComplain extends React.Component {
                             <FormGroup>
                                 <Label for="towhom">To Who</Label>
                                 <Input type="select" name="towhom" id="towhom" onChange={this.handleTowhom}>
+                                    <option value="" selected disabled>------</option>
                                     {
                                         this.props.roommates.map((item, index)=>{
                                            if(item.id !== this.props.user.id){

@@ -37,7 +37,7 @@ export default class Complain extends React.Component {
             content = 
                 <div className="complain">
                     <Card body inverse color="danger">
-                        <CardTitle tag="h5">You Get A Complain!!!!!!</CardTitle>
+                        <CardTitle tag="h5">You Get A Complaint!!!!!!</CardTitle>
                         <CardText>
                             {this.props.complain[0].expect}
                         </CardText>
