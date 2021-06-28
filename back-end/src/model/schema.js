@@ -64,6 +64,8 @@ CREATE TABLE notifications (
 CREATE INDEX complains_idx_ts ON complains USING btree(ts);
 CREATE INDEX notifications_idx_ts ON notifications USING btree(ts);
 CREATE INDEX notifications_idx_text ON notifications USING gin(text gin_trgm_ops);
+
+INSERT INTO rooms (id,name) VALUES ('0','none') RETURNING *;
 `;
 
 const dataSql = `
