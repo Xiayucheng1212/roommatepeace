@@ -67,10 +67,10 @@ export default class SignUp extends React.Component {
                             <option>No</option>
                             </Input>
                         </FormGroup> */}
-                        <FormGroup>
+                        {/* <FormGroup>
                             <Label for="examplePhoto">Photo</Label>
                             <Input type="file" name="photo" id="examplePhoto" />
-                        </FormGroup>
+                        </FormGroup> */}
                         <Button>Submit</Button>
                     </Form>
                 </div>
