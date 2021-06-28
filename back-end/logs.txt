@@ -474,185 +474,81 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
-1623331580 ERROR  error: invalid input value for enum state: "undefined"
-    at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
 1623259382 ERROR  error: invalid input syntax for type boolean: "undefined"
     at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623331581 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623259522 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566471 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623259622 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566473 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623259720 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566487 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623259824 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566490 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623259955 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566490 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623260470 ERROR  error: invalid input syntax for type boolean: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623566490 ERROR  error: invalid input value for enum state: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623500840 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (internal/streams/readable.js:309:12)
-    at readableAddChunk (internal/streams/readable.js:284:9)
-    at Socket.Readable.push (internal/streams/readable.js:223:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-1623504960 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (internal/streams/readable.js:309:12)
-    at readableAddChunk (internal/streams/readable.js:284:9)
-    at Socket.Readable.push (internal/streams/readable.js:223:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-1623505720 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (internal/streams/readable.js:309:12)
-    at readableAddChunk (internal/streams/readable.js:284:9)
-    at Socket.Readable.push (internal/streams/readable.js:223:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-1623506038 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (internal/streams/readable.js:309:12)
-    at readableAddChunk (internal/streams/readable.js:284:9)
-    at Socket.Readable.push (internal/streams/readable.js:223:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-1623506243 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> a2cbd085e65fa1f70a4d207f17dcbb082591dfdc
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
@@ -1028,43 +924,26 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623583930 ERROR  error: invalid input syntax for type integer: "undefined"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623510338 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> b71963044a73dc89f20a7ac906273f2b717ddeda
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623592733 ERROR  error: insert or update on table "users" violates foreign key constraint "users_room_id_fkey"
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623516907 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> b71963044a73dc89f20a7ac906273f2b717ddeda
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1623593107 ERROR  error: column "undefined" does not exist
     at Parser.parseErrorMessage (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
@@ -1140,13 +1019,6 @@
     at Parser.handlePacket (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
     at Parser.parse (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
     at Socket.<anonymous> (C:\Users\K\Desktop\109062108K\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
-=======
-1623517463 ERROR  error: column "undefined" does not exist
-    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
-    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
-    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
-    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
->>>>>>> b71963044a73dc89f20a7ac906273f2b717ddeda
     at Socket.emit (events.js:315:20)
     at addChunk (internal/streams/readable.js:309:12)
     at readableAddChunk (internal/streams/readable.js:284:9)
@@ -1332,7 +1204,6 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-<<<<<<< HEAD
 1624691918 ERROR  TypeError: Cannot read property 'id' of undefined
     at Object.checklogin (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\model\login.js:19:33)
     at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\src\routers\login.js:15:8
@@ -1509,119 +1380,6 @@
     at Function.process_params (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:335:12)
     at next (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\express\lib\router\index.js:275:10)
     at D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\body-parser\lib\read.js:130:5
-=======
-1624702229 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624702592 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624702873 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624702895 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624702958 ERROR  error: invalid input syntax for type integer: ""
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624703161 ERROR  error: invalid input syntax for type integer: ""
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624703287 ERROR  error: invalid input syntax for type integer: ""
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624703343 ERROR  error: invalid input syntax for type integer: ""
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624717305 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624719932 ERROR  error: invalid input syntax for type integer: "Xia Yucheng"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624720532 ERROR  error: invalid input syntax for type integer: "Xia Yucheng"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
->>>>>>> 9199ecf5ca74ea6134790083bfd0c393efd149b2
-<<<<<<< HEAD
 1624733230 ERROR  error: invalid input syntax for type integer: "[object Object]"
     at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
     at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
@@ -1672,35 +1430,13 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
-=======
-1624775525 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+1624807475 ERROR  error: syntax error at or near "SELECTC"
+    at Parser.parseErrorMessage (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:278:15)
+    at Parser.handlePacket (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\andrea\university\course\first_grade_2\software\final project\roommatepeace\back-end\node_modules\pg-protocol\dist\index.js:10:42)
     at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624775582 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
-1624775630 ERROR  error: invalid input syntax for type integer: "undefined"
-    at Parser.parseErrorMessage (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
-    at Parser.handlePacket (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
-    at Parser.parse (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
-    at Socket.<anonymous> (/Users/xgdhgfxhcngf/Desktop/NTHUY1S2/softwareLab/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
-    at Socket.emit (events.js:315:20)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23)
->>>>>>> 45e3b8266c41a36e859e8a8afdd19dc16dd3527c
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at TCP.onStreamRead (internal/stream_base_commons.js:188:23)

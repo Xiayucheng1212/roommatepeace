@@ -45,6 +45,7 @@ export default class UserProfile extends React.Component {
                             <FormGroup>
                                 <Label for="state">Select</Label>
                                 <Input type="select" name="select" id="state" onChange = {this.handleChangeState}>
+                                    <option value="" selected disabled>--------</option>
                                     <option>sleeping</option>
                                     <option>not home</option>
                                     <option>at home</option>
