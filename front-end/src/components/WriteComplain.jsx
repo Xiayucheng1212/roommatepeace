@@ -36,7 +36,7 @@ export default class WriteComplain extends React.Component {
             problem:"聲音類",
             reason :"鬧鐘",
             towhom :"",
-            expect:"1",
+            expect:"我每天都被你雞巴美妙的鬧鐘聲叫醒～",
             reasonOption:voicereason
         };
         
