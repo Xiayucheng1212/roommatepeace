@@ -44,9 +44,7 @@ export default class ShowRoom extends React.Component {
         this.handleWriteComplainToggle = this.handleWriteComplainToggle.bind(this);
         this.handleWriteNotificationToggle = this.handleWriteNotificationToggle.bind(this);
         this.handleComplainUpdate = this.handleComplainUpdate.bind(this);
-        this.handleComplainGain = this.handleComplainGain.bind(this);
         this.handleNotificationUpdate = this.handleNotificationUpdate.bind(this);
-        this.handleUpdate = this.handleUpdate.bind(this);
     }
 
     render() {
@@ -90,9 +88,10 @@ export default class ShowRoom extends React.Component {
                         {/* TODO */}
                         <Alert color={this.state.complainNum != 0 ? "danger" : "success"} onClick={this.handleComplainToggle}>
                             {
-                                (this.state.complainNum != 0)?"You have a complain!! — check it out!":"Have a nice day!"
+                                (this.state.complainNum != 0)?"You have a complaint!! — check it out!":"Have a nice day!"
                             }
                         </Alert>
+                        <Complain handleComplainToggle={this.handleComplainToggle} complainToggle={this.state.complainToggle} complain={this.state.complain} handleComplainUpdate={this.handleComplainUpdate} user={this.props.user} />
 
                     </div>
                     {/* roommates */}
@@ -108,16 +107,12 @@ export default class ShowRoom extends React.Component {
                         <UserCircle user={this.props.user} index={0}
                             userNum={this.state.userNum} mainuser={this.props.user} />
                     </div>
-
-                    <div class="container" >
-                        <div onClick={this.handleUpdate} class="refresh"></div>
-                    </div>
                     {/* profile and write */}
                     <div className="container foot">
                         
                         <span className="write" onClick={this.handleWriteComplainToggle} style={{backgroundColor:this.props.user.color}}>
                             <img class="profileIcon" src="images/writing.png" alt="" />
-                            <div className="word">Complain</div>
+                            <div className="word">Complaint</div>
                         </span>
                         <span className="profile" onClick={this.handleUserProfileToggle} style={{backgroundColor:this.props.user.color}}>
                             <img class="profileIcon" src="images/anonymous.png" alt="" />
@@ -129,9 +124,8 @@ export default class ShowRoom extends React.Component {
                         </span>
                     </div>
                     <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle} user={this.props.user} handleuserdata={this.props.handleuserdata} />
-                    <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} handleComplainGain={this.handleComplainGain} />
+                    <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
                     <WriteNotification handleWriteNotificationToggle={this.handleWriteNotificationToggle} writeNotificationToggle={this.state.writeNotificationToggle} user={this.props.user} handleNotificationUpdate={this.handleNotificationUpdate} />
-                    <Complain handleComplainToggle={this.handleComplainToggle} complainToggle={this.state.complainToggle} complain={this.state.complain} handleComplainUpdate={this.handleComplainUpdate} user={this.props.user} />
                 </div>
             </Router>
         );
@@ -204,38 +198,6 @@ export default class ShowRoom extends React.Component {
         })
     }
 
-    async handleComplainGain(){
-        const complain = await getcomplain(this.props.user.id);
-        console.log('complain: '+ this.state.complainNum);
-        console.log(this.state.complain);
-        this.setState({
-            complain: complain.data,
-            complainNum: complain.data.length
-        })
-    }
-
-    async handleUpdate(){
-        const res = await getUsers(this.props.user.room_id);
-        //    const res1 = await getSingleUser(3);
-        const notifications = await getroomnotification(this.props.user.room_id);
-        const complain = await getcomplain(this.props.user.id);
-        // console.log(complain);
-        const roommates = res.data.filter((item) => {
-            if (item.id != this.props.user.id) {
-                return true;
-            }
-        })
-        console.log(roommates);
-        this.setState({
-            roommates: roommates,
-            notifications: notifications.data,
-            notificationNum: notifications.data.length,
-            complain: complain.data,
-            complainNum: complain.data.length,
-            userNum: roommates.length + 1
-        })
-    }
-
     handleNotificationUpdate(_notifications){
         console.log(this.state.notifications);
 
@@ -250,7 +212,25 @@ export default class ShowRoom extends React.Component {
     }
 
     async componentDidMount() {
-        this.handleUpdate();
+        const res = await getUsers(this.props.user.room_id);
+        //    const res1 = await getSingleUser(3);
+        const notifications = await getroomnotification(this.props.user.room_id);
+        const complain = await getcomplain(this.props.user.id);
+        console.log(complain);
+        const roommates = res.data.filter((item) => {
+            if (item.id != this.props.user.id) {
+                return true;
+            }
+        })
+        console.log(roommates);
+        this.setState({
+            roommates: roommates,
+            notifications: notifications.data,
+            notificationNum: notifications.data.length,
+            complain: complain.data,
+            complainNum: complain.data.length,
+            userNum: roommates.length + 1
+        })
         // console.log(this.state.userNum);
     }
 }

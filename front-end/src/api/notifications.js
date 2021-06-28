@@ -1,7 +1,7 @@
 import axios from 'axios';
 import '@babel/polyfill';
 
-const userBaseUrl = 'http://localhost:3000/notification';
+const userBaseUrl = 'http://roommatepeace.ap-northeast-1.elasticbeanstalk.com/notification';
 const service = axios.create({
     baseURL: userBaseUrl
 })

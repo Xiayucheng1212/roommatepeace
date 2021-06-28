@@ -35,8 +35,8 @@ export default class HomePage extends React.Component {
                 <div className='container'>
                     <Navbar color="light" light expand="md" >
                         <NavbarBrand>
-                            <div style={{fontWeight:'bolder'}} >
-                                {"RoommatePeace"} &nbsp;&nbsp;
+                            <div style={{fontWeight:'bolder'}}>
+                                {this.state.room_name == ""?"RoommatePeace":this.state.room_name} &nbsp;&nbsp;
                                 {this.props.user.room_id?this.props.user.room_id:""}
                             </div>
                         </NavbarBrand>
@@ -66,12 +66,11 @@ export default class HomePage extends React.Component {
     async componentDidMount(){
         if(this.props.user.room_id == 0) return;
         const res = await getRoomname(this.props.user.room_id);
+        console.log(room_id);
         this.setState({
             room_name:res.data.name
         })
     }
-
-
     
     handleUserRoom(){
         this.setState((state,props)=>{

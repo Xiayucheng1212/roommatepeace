@@ -34,7 +34,7 @@ export default class UserCircle extends React.Component {
                     style={{
                         backgroundColor: this.props.user.color,
                         left:/*document.body.clientWidth*/this.state.width / 2 - 100 + Math.cos((90 - 360 * this.props.index / this.props.userNum) * pi / 360) * 100 + 8,
-                        top:/*document.body.clientHeight*/this.state.height / 2 - 80 + Math.sin((90 - 360 * this.props.index / this.props.userNum) * pi / 360) * 100
+                        top:/*document.body.clientHeight*/this.state.height / 2 - 60 + Math.sin((90 - 360 * this.props.index / this.props.userNum) * pi / 360) * 100
                     }}>
                     <div className="userInfo">
                         <div className="name">

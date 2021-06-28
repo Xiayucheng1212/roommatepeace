@@ -1,7 +1,7 @@
 import axios from 'axios';
 import '@babel/polyfill';
 
-const userBaseUrl = 'http://localhost:3000/room';
+const userBaseUrl = 'http://roommatepeace.ap-northeast-1.elasticbeanstalk.com/room';
 const service = axios.create({
     baseURL: userBaseUrl
 })
