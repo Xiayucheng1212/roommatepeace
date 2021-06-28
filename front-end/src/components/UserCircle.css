@@ -20,6 +20,8 @@
     font-weight: 500;
     text-decoration-thickness: 3px;
     margin-bottom: 10px;
+    background-color: rgb(241, 230, 215);
+    border-radius: 14px;
 }
 
 .state{
