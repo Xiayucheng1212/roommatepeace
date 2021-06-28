@@ -11,14 +11,14 @@ import { PropTypes } from 'prop-types';
 const voicereason = ['鬧鐘聲','關門','走樓梯下床','講電話'];
 const hygienereason = ['丟垃圾','不整理','不掃地'];
 const otherreason = ['作息時間','開冷氣','帶朋友回來'];
-const clockExpect = ['我每天都被你雞巴美妙的鬧鐘聲叫醒～','可以設一兩個鬧鐘就好嗎？'];
+const clockExpect = ['我每天都被你雞巴美妙的鬧鐘聲叫醒欸','可以設一兩個鬧鐘就好嗎？'];
 const closedoorExpect = ['可以輕輕的關門嗎？','要記得關門喔!'];
-const walkExpect = ['可以腳步小聲一點嗎?','你下床，可以稍微小聲一點嗎，罷托'];
+const walkExpect = ['可以腳步小聲一點嗎?','你下床，我都以為地震來了要快逃'];
 const talkExpect = ['可以講話小聲一點嗎？','可以不要這麼晚講電話嗎？']
 const trashExpect = ['可以定時記得丟垃圾嗎？','可以不要讓食物臭臭嗎？'];
 const cleanExpect = ['可以清理一下個人座位嗎?','哇!哥明明人體積不大啊，怎麼東西整個凸出來擋道路了餒'];
 const floorExpect = ['可以把地上頭髮稍微整理整理嗎?','嘿!我們寢要默默鋪上一層頭髮地毯了餒'];
-const timeExpect = ['可以在寢室內有人要睡覺時就關燈嗎?','早睡早起對身體好啊!別拉著我一起晚睡惹嘛~'];
+const timeExpect = ['可以在寢室內有人要睡覺時就關燈嗎?','姐，早睡早起對身體好啊!別拉著我一起晚睡惹嘛~'];
 const airExpect = ['可以投票決定要不要開冷氣嗎?','心靜自然涼，我們別開冷氣好不好'];
 const friendExpect = ['霸托霸脫> < 我帶朋朋回去寢室玩，如果方便，可以把寢室讓給我們嗎?','可以出去望遠凝視一下嘛~謝謝大哥感恩大姊!'];
 
@@ -27,8 +27,7 @@ export default class WriteComplain extends React.Component {
         user: PropTypes.object,
         writeComplainToggle: PropTypes.bool,
         handleWriteComplainToggle: PropTypes.func,
-        roommates:PropTypes.array,
-        handleComplainGain: PropTypes.func
+        roommates:PropTypes.array
     };
     constructor(props) {
         super(props);
@@ -48,7 +47,6 @@ export default class WriteComplain extends React.Component {
         this.handleExpect = this.handleExpect.bind(this);
         this.handleTowhom = this.handleTowhom.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        
     }
     componentDidMount(){
         if(this.props.roommates.length <= 1){
@@ -110,7 +108,7 @@ export default class WriteComplain extends React.Component {
                                     }
                                 </Input>
                             </FormGroup>
-                            <Button outline color="primary">Submit</Button>
+                            <Button outline color="info">Submit</Button>
                         </Form>
                     </div>
                 </div>;
@@ -202,7 +200,6 @@ export default class WriteComplain extends React.Component {
             reason: this.state.reason,
             expect: this.state.expect
         }).then((cpl)=>{
-            this.props.handleComplainGain();
             this.props.handleWriteComplainToggle();
         })
     }

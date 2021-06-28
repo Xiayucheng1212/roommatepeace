@@ -35,7 +35,7 @@ export default class Complain extends React.Component {
         }
         if (this.props.complainToggle && available) {
             content = 
-                <div className="container complain">
+                <div className="complain">
                     <Card body inverse color="danger">
                         <CardTitle tag="h5">You Get A Complaint!!!!!!</CardTitle>
                         <CardText>
