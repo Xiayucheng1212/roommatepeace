@@ -37,7 +37,7 @@ export default class WriteComplain extends React.Component {
             problem:"聲音類",
             reason :"鬧鐘",
             towhom :"",
-            expect:"1",
+            expect:"我每天都被你雞巴美妙的鬧鐘聲叫醒～",
             reasonOption:voicereason
         };
         
@@ -48,7 +48,7 @@ export default class WriteComplain extends React.Component {
         this.handleExpect = this.handleExpect.bind(this);
         this.handleTowhom = this.handleTowhom.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        
+        this.init = this.init.bind(this);
     }
     componentDidMount(){
         if(this.props.roommates.length <= 1){
@@ -65,6 +65,7 @@ export default class WriteComplain extends React.Component {
     render() {
         var content;
         if (this.props.writeComplainToggle) {
+            {init()}
             content =
                 <div className="position-absolute top-50 start-50 translate-middle writeComplain">
                     <div className="icon">
@@ -121,6 +122,9 @@ export default class WriteComplain extends React.Component {
                 {content}
             </div>
         );
+
+    }
+    init(){
 
     }
     handleProblem(e){
