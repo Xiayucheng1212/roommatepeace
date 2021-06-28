@@ -33,7 +33,7 @@ export default class Login extends React.Component {
             <Router>
                 <div className="Login">
                     <h2>Login</h2>
-                <Form  classname="form" onSubmit={this.checkIsLoggin}>
+                <Form  className="form" onSubmit={this.checkIsLoggin}>
                     <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                         <Label for="exampleEmail" className="mr-sm-2">Email</Label>
                         <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" onChange={this.handleEmail} />
