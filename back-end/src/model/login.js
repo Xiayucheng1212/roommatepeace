@@ -5,13 +5,14 @@ if (!global.db) {
   }
   //checklogin
   function checklogin(user) {
+    const { email, password } = user;
     const sql = `
           SELECT *
           FROM users
-          WHERE email = \'${user.email}\' AND password = \'${user.password}\'
+          WHERE email = $<email> AND password = $<password>
       `;
     console.log(sql);
-    return db.any(sql);
+    return db.any(sql, { email, password });
   }
   
   module.exports = {

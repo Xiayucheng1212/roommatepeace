@@ -1440,3 +1440,775 @@
     at readableAddChunk (internal/streams/readable.js:284:9)
     at Socket.Readable.push (internal/streams/readable.js:223:10)
     at TCP.onStreamRead (internal/stream_base_commons.js:188:23)
+1624897173 ERROR  error: insert or update on table "users" violates foreign key constraint "users_room_id_fkey"
+    at Parser.parseErrorMessage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:278:15)
+    at Parser.handlePacket (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:126:29)
+    at Parser.parse (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/pg-protocol/dist/parser.js:39:38)
+    at Socket.<anonymous> (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/pg-protocol/dist/index.js:10:42)
+    at Socket.emit (node:events:394:28)
+    at addChunk (node:internal/streams/readable:312:12)
+    at readableAddChunk (node:internal/streams/readable:287:9)
+    at Socket.Readable.push (node:internal/streams/readable:226:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+1624897281 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897355 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897449 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897500 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897639 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897752 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624897846 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624898269 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624898590 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624898825 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624898855 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624898965 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899073 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899359 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899420 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899584 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899770 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624899923 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900083 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900115 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900299 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900437 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900572 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900601 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624900752 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624901046 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624901214 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624901364 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624901861 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624901908 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902027 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902076 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902143 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902613 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902689 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624902732 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624903076 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624903083 ERROR  PayloadTooLargeError: request entity too large
+    at readStream (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:108:12)
+    at read (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:317:13)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:174:3)
+1624903083 ERROR  PayloadTooLargeError: request entity too large
+    at readStream (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:108:12)
+    at read (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:317:13)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:174:3)
+1624903277 ERROR  PayloadTooLargeError: request entity too large
+    at readStream (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:108:12)
+    at read (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:317:13)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/middleware/init.js:40:5)
+1624903332 ERROR  PayloadTooLargeError: request entity too large
+    at readStream (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:155:17)
+    at getRawBody (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/raw-body/index.js:108:12)
+    at read (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/read.js:77:3)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:135:5)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:317:13)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at module.exports (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/middleware/access-controller.js:20:3)
+1624903397 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624903807 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624904687 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624904817 ERROR  ReferenceError: setImage is not defined
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:16:5
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624904924 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:17:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905050 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:17:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905092 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:18:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905129 ERROR  TypeError: Cannot read property 'then' of undefined
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:19:7
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:101:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624905164 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:18:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905199 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:18:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905209 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:21)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:18:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905352 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:19)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:17:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905352 ERROR  InvalidCharacterError: Invalid character
+    at atob (node:buffer:1242:7)
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:17:19)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:17:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+1624905756 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624906268 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624906291 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624906425 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624906570 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624907651 ERROR  ReferenceError: imgur is not defined
+    at Object.setImage (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/model/uploadimage.js:9:3)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/uploadimage.js:15:8
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:101:7)
+1624907880 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624908730 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624908804 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624908820 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624908888 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624908978 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624909012 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624909300 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624909361 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+1624909374 ERROR  TypeError: roomModel.getroomname is not a function
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/src/routers/rooms.js:16:6
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)
+    at /home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/home/samuel/Documents/Course/Software Studio/roommatepeace/back-end/node_modules/express/lib/router/layer.js:95:5)

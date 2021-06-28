@@ -23,6 +23,7 @@ export default class UserCircle extends React.Component {
             height: document.body.clientHeight
         };
 
+        this.handleOpen = this.handleOpen.bind(this);
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -30,7 +31,7 @@ export default class UserCircle extends React.Component {
         return (
             <Router>
                 <div className={`${this.state.mouseEnterClass ? "circle-big" : "circle"} ${this.props.user.state == "not home" ? "not-at-home" : "at-home"}`}
-                    onClick={this.handleClick}
+                    onClick={this.handleOpen}
                     style={{
                         backgroundColor: this.props.user.color,
                         left:/*document.body.clientWidth*/this.state.width / 2 - 100 + Math.cos((90 - 360 * this.props.index / this.props.userNum) * pi / 360) * 100 + 8,
@@ -61,6 +62,13 @@ export default class UserCircle extends React.Component {
     }
     updateDimensions = () => {
         this.setState({ width: window.innerWidth, height: window.innerHeight });
+    }
+    handleOpen() {
+        this.setState((state, props) => {
+            return {
+                userInfoToggle: true
+            }
+        })
     }
     handleClick() {
         this.setState((state, props) => {

@@ -2,6 +2,7 @@ import axios from 'axios';
 import '@babel/polyfill';
 
 const userBaseUrl = 'http://roommatepeace.ap-northeast-1.elasticbeanstalk.com/user';
+// const userBaseUrl = 'http://localhost:3000/user';
 const service = axios.create({
     baseURL: userBaseUrl
 })
@@ -26,7 +27,7 @@ export function createUser(name,email,password,color,reminder){
         password:password,
         reminder:reminder,
         color:color,
-        photo:"uuu"
+        photo: "images/user.png"
     });
     //return newuser;
 }

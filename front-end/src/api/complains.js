@@ -2,6 +2,7 @@ import axios from 'axios';
 import '@babel/polyfill';
 
 const complainBaseUrl = 'http://roommatepeace.ap-northeast-1.elasticbeanstalk.com/complain';
+// const complainBaseUrl = 'http://localhost:3000/complain';
 const service = axios.create({
     baseURL: complainBaseUrl
 })
