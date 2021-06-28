@@ -48,7 +48,6 @@ export default class WriteComplain extends React.Component {
         this.handleExpect = this.handleExpect.bind(this);
         this.handleTowhom = this.handleTowhom.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.init = this.init.bind(this);
     }
     componentDidMount(){
         if(this.props.roommates.length <= 1){
@@ -65,7 +64,6 @@ export default class WriteComplain extends React.Component {
     render() {
         var content;
         if (this.props.writeComplainToggle) {
-            {init()}
             content =
                 <div className="position-absolute top-50 start-50 translate-middle writeComplain">
                     <div className="icon">
@@ -122,9 +120,6 @@ export default class WriteComplain extends React.Component {
                 {content}
             </div>
         );
-
-    }
-    init(){
 
     }
     handleProblem(e){

@@ -37,7 +37,7 @@ export default class SignUp extends React.Component {
             <Router>
                 <div className="Login">
                     <h2>Sign Up</h2>
-                    <Form  classname="form" inline onSubmit={this.handleSignUp} action="../">
+                    <Form  classname="form" onSubmit={this.handleSignUp} action="../">
                         <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
                             <Label for="exampleName" className="mr-sm-2">Username</Label>
                             <Input type="text" name="name" id="exampleName" placeholder="Name" onChange={this.handleName} />

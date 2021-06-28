@@ -36,7 +36,7 @@ export default class HomePage extends React.Component {
                     <Navbar color="light" light expand="md" >
                         <NavbarBrand>
                             <div style={{fontWeight:'bolder'}} >
-                                {this.state.room_name == ""?"RoommatePeace":this.state.room_name} &nbsp;&nbsp;
+                                {"RoommatePeace"} &nbsp;&nbsp;
                                 {this.props.user.room_id?this.props.user.room_id:""}
                             </div>
                         </NavbarBrand>
