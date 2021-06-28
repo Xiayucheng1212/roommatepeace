@@ -68,7 +68,7 @@ export default class WriteComplain extends React.Component {
                     <div className="icon">
                     </div>
                     <div>
-                        <Alert color="secondary">Write A Complain</Alert>
+                        <Alert color="secondary">Write A Complaint</Alert>
                     </div>
                     <div className="close" onClick={this.props.handleWriteComplainToggle}>
                     </div>
