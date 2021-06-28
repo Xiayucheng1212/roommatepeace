@@ -219,7 +219,7 @@ export default class ShowRoom extends React.Component {
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
         const complain = await getcomplain(this.props.user.id);
-        // console.log(complain);
+        console.log(complain);
         const roommates = res.data.filter((item) => {
             if (item.id != this.props.user.id) {
                 return true;

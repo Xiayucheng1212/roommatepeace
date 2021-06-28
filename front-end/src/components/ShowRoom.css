@@ -40,8 +40,8 @@
 .refresh{
     background-image: url('images/refresh.png');
     background-size: 100% 100%;
-    width: 55px;
-    height: 55px;
+    width: 2em;
+    height: 2em;
 }
 
 .container{
