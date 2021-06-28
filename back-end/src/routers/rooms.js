@@ -8,6 +8,17 @@ const router = express.Router();
 
 router.use(express.json());
 
+//GetRoomName
+router.get('/getroomname', function (req, res, next) {
+  const { room_id } = req.query;
+  console.log(room_id);
+  roomModel
+    .getroomname(room_id)
+    .then((room) => {
+      res.json(room);
+    })
+    .catch(next);
+});
 // Create
 router.post('/create', function (req, res, next) {
     roomModel

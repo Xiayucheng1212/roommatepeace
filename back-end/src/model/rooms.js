@@ -26,8 +26,18 @@ if (!global.db) {
     console.log(sql);
     return db.one(sql);
   }
+  //getRoomname
+  function getroomname(room_id) {
+    const sql = `
+          SELECT * FROM rooms
+          WHERE id = ${room_id}
+      `;
+    console.log(sql);
+    return db.one(sql);
+  }
 
   module.exports = {
       create,
-      update
+      update,
+      getroomname
   };
