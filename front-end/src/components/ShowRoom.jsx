@@ -44,7 +44,9 @@ export default class ShowRoom extends React.Component {
         this.handleWriteComplainToggle = this.handleWriteComplainToggle.bind(this);
         this.handleWriteNotificationToggle = this.handleWriteNotificationToggle.bind(this);
         this.handleComplainUpdate = this.handleComplainUpdate.bind(this);
+        this.handleComplainGain = this.handleComplainGain.bind(this);
         this.handleNotificationUpdate = this.handleNotificationUpdate.bind(this);
+        this.handleUpdate = this.handleUpdate.bind(this);
     }
 
     render() {
@@ -107,6 +109,10 @@ export default class ShowRoom extends React.Component {
                         <UserCircle user={this.props.user} index={0}
                             userNum={this.state.userNum} mainuser={this.props.user} />
                     </div>
+
+                    <div class="container" >
+                        <div onClick={this.handleUpdate} class="refresh"></div>
+                    </div>
                     {/* profile and write */}
                     <div className="container foot">
                         
@@ -124,7 +130,7 @@ export default class ShowRoom extends React.Component {
                         </span>
                     </div>
                     <UserProfile handleUserProfileToggle={this.handleUserProfileToggle} userProfileToggle={this.state.userProfileToggle} user={this.props.user} handleuserdata={this.props.handleuserdata} />
-                    <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} />
+                    <WriteComplain handleWriteComplainToggle={this.handleWriteComplainToggle} writeComplainToggle={this.state.writeComplainToggle} user={this.props.user} roommates={this.state.roommates} handleComplainGain={this.handleComplainGain} />
                     <WriteNotification handleWriteNotificationToggle={this.handleWriteNotificationToggle} writeNotificationToggle={this.state.writeNotificationToggle} user={this.props.user} handleNotificationUpdate={this.handleNotificationUpdate} />
                 </div>
             </Router>
@@ -198,20 +204,17 @@ export default class ShowRoom extends React.Component {
         })
     }
 
-    handleNotificationUpdate(_notifications){
-        console.log(this.state.notifications);
-
-        this.setState((state)=>{
-            return {
-                notifications: [_notifications, state.notifications[0], state.notifications[1]],
-                notificationNum: state.notificationNum+1
-            }
-        },()=>{
-            console.log(this.state.notifications);
+    async handleComplainGain(){
+        const complain = await getcomplain(this.props.user.id);
+        console.log('complain: '+ this.state.complainNum);
+        console.log(this.state.complain);
+        this.setState({
+            complain: complain.data,
+            complainNum: complain.data.length
         })
     }
 
-    async componentDidMount() {
+    async handleUpdate(){
         const res = await getUsers(this.props.user.room_id);
         //    const res1 = await getSingleUser(3);
         const notifications = await getroomnotification(this.props.user.room_id);
@@ -231,6 +234,23 @@ export default class ShowRoom extends React.Component {
             complainNum: complain.data.length,
             userNum: roommates.length + 1
         })
+    }
+
+    handleNotificationUpdate(_notifications){
+        console.log(this.state.notifications);
+
+        this.setState((state)=>{
+            return {
+                notifications: [_notifications, state.notifications[0], state.notifications[1]],
+                notificationNum: state.notificationNum+1
+            }
+        },()=>{
+            console.log(this.state.notifications);
+        })
+    }
+
+    async componentDidMount() {
+        this.handleUpdate();
         // console.log(this.state.userNum);
     }
 }

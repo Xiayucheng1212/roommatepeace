@@ -35,7 +35,7 @@ export default class HomePage extends React.Component {
                 <div className='container'>
                     <Navbar color="light" light expand="md" >
                         <NavbarBrand>
-                            <div style={{fontWeight:'bolder'}}>
+                            <div style={{fontWeight:'bolder'}} >
                                 {this.state.room_name == ""?"RoommatePeace":this.state.room_name} &nbsp;&nbsp;
                                 {this.props.user.room_id?this.props.user.room_id:""}
                             </div>
@@ -70,6 +70,8 @@ export default class HomePage extends React.Component {
             room_name:res.data.name
         })
     }
+
+
     
     handleUserRoom(){
         this.setState((state,props)=>{
