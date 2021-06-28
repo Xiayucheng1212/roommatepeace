@@ -178,7 +178,6 @@ export default class WriteComplain extends React.Component {
         });
     }
     handleTowhom(e){
-        console.log(e.target.value);
         this.setState({towhom:e.target.value})
     }
     handleExpect(e){
@@ -187,11 +186,11 @@ export default class WriteComplain extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         // console.log("ppppp");
-        console.log(this.props.user.id,
-            this.state.towhom,
-            this.state.problem,
-            this.state.reason,
-           this.state.expect);
+        // console.log(this.props.user.id,
+        //     this.state.towhom,
+        //     this.state.problem,
+        //     this.state.reason,
+        //    this.state.expect);
         createComplain({
             from_user: this.props.user.id,
             to_user: this.state.towhom,
@@ -199,7 +198,6 @@ export default class WriteComplain extends React.Component {
             reason: this.state.reason,
             expect: this.state.expect
         }).then((cpl)=>{
-            console.log(cpl);
             this.props.handleWriteComplainToggle();
         })
     }
