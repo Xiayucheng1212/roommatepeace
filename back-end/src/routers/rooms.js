@@ -30,5 +30,15 @@ router.post('/create', function (req, res, next) {
         .catch(next);
     }
   );
+
+  router.get(
+    '/getroomname',
+    function (req,res,next){
+      roomModel.getRoomName(req.body)
+      .then((roomName)=>{
+        res.json(roomName);
+      })
+    }
+  )
   
   module.exports = router;

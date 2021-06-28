@@ -27,7 +27,13 @@ if (!global.db) {
     return db.one(sql);
   }
 
+  function getRoomName(room_id){
+    const sql = `SELECT * FROM rooms WHERE id = ${room_id}`;
+    return db.any(sql);
+  }
+
   module.exports = {
       create,
-      update
+      update,
+      getRoomName
   };
