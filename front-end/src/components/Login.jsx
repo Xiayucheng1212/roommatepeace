@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 import {
-    Button, Form, FormGroup, Label, Input
+    Button, Form, FormGroup, Label, Input,Fade
 } from 'reactstrap';
 
 import './Login.css';
@@ -10,7 +10,8 @@ import {checkLogin} from '../api/islog.js';
 
 export default class Login extends React.Component {
     static propTypes = {
-        handleuserdata: PropTypes.func
+        handleuserdata: PropTypes.func,
+        isLogged: PropTypes.bool,
     };
     constructor(props) {
         super(props);
@@ -19,6 +20,7 @@ export default class Login extends React.Component {
             isLogged:props.isLogged,
             password:NaN,
             email: NaN,
+            isWrong:false
         };
 
         this.checkIsLoggin = this.checkIsLoggin.bind(this);
@@ -40,7 +42,7 @@ export default class Login extends React.Component {
                         <Label for="examplePassword" className="mr-sm-2">Password</Label>
                         <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" onChange={this.handlePassword} />
                     </FormGroup>
-                    <Button>Submit</Button>
+                    <Button>{this.state.isWrong?"Wrong!Login Again!":"Submit"}</Button>
                 </Form>
                 </div>
             </Router>
@@ -49,10 +51,14 @@ export default class Login extends React.Component {
     handleEmail(e){
         // console.log(e);
         // console.log("wwwww");
-        this.setState({email:e.target.value});
+        this.setState({
+            isWrong:false,
+            email:e.target.value});
     }
     handlePassword(e){
-        this.setState({password:e.target.value});
+        this.setState({
+            isWrong:false,
+            password:e.target.value});
     }
 
     checkIsLoggin(event){
@@ -60,9 +66,15 @@ export default class Login extends React.Component {
         console.log(this.state.email,this.state.password);
         if(!this.props.isLogged){
             checkLogin(this.state.email,this.state.password).then(user=>{
-                console.log(user);
+                console.log(user.data.length);
+                if(user.data.length == 0){
+                    console.log("llll");
+                    this.setState({isWrong:true});
+                    return ;
+                }
                 window.history.back();
                 this.setState({
+                    isWrong:false
                 },()=>this.handleuserdata(user));
             })
         }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import {
     ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem,
-    Alert, Navbar, Nav, NavbarBrand, NavItem, NavLink
+    Alert, Navbar, Nav, NavbarBrand, NavItem, NavLink,Fade
 } from 'reactstrap';
 
 import {PropTypes} from 'prop-types';
@@ -30,28 +30,33 @@ export default class MainPage extends React.Component {
     }
 
     render() {
+        // const [fadeIn, setFadeIn] = useState(false);
+        // const toggle = () => setFadeIn(!fadeIn);
         return (
             <Router>
                 <div className="main ">
                     <div className='container'>
                         <Navbar color="light" light expand="md">
-                            <NavbarBrand href="/login">RoommatePeace</NavbarBrand>
+                            <NavbarBrand >
+                                RoommatePeace
+                            </NavbarBrand>
                             <Nav navbar>
                                 <NavItem>
                                     <NavLink tag={Link} to="/login" >login</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink tag={Link} to="/signUp">signUp</NavLink>
+                                    <NavLink tag={Link} to="/signUp" >signUp</NavLink>
                                 </NavItem>
                             </Nav>
                         </Navbar>
+                        {this.props.isLogged == false?<img src="images/logo.png" alt="" />:""}
                     </div>
                     <div className="container">
                         <Switch>
                             <Route exact path="/login"
                                 //component={Login}
                                 render={()=>(
-                                    <Login handleuserdata={this.props.handleuserdata}/>
+                                    <Login handleuserdata={this.props.handleuserdata} isLogged={this.props.isLogged}/>
                                 )}
                             />
                             {/* 完成驗證之後 傳送callback向上更新 */}

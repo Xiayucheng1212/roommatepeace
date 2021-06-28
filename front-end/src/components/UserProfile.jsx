@@ -7,11 +7,11 @@ import {
 import './UserProfile.css';
 import { PropTypes } from 'prop-types';
 import {updateUser} from '../api/users.js';
-import './UserProfile.css';
 export default class UserProfile extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         location: PropTypes.object,
+        handleUserProfileToggle: PropTypes.func,
         userProfileToggle: PropTypes.bool,
         handleuserdata: PropTypes.func
     };
@@ -23,7 +23,7 @@ export default class UserProfile extends React.Component {
         };
 
         this.handleColor = this.handleColor.bind(this);
-        this.handleChageState = this.handleChageState.bind(this);
+        this.handleChangeState = this.handleChangeState.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -33,19 +33,22 @@ export default class UserProfile extends React.Component {
             content =
                 <div className="position-absolute top-50 start-50 translate-middle userProfile">
                     <div>
-                        <Alert color="info">Change</Alert>
+                        <Alert color="secondary">Change</Alert>
+                    </div>
+                    <div className="close" onClick={this.props.handleUserProfileToggle}>
                     </div>
                     <div className="icon">
 
                     </div>
                     <div className="setting">
-                        <Form onSubmit={this.handleSubmit}>
+                        <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
-                                <Label for="state">State</Label>
-                                <Input type="select" name="select" id="state" onChange={this.handleChageState}>
-                                    <option>at home</option>
-                                    <option>not home</option>
+                                <Label for="state">Select</Label>
+                                <Input type="select" name="select" id="state" onChange = {this.handleChangeState}>
                                     <option>sleeping</option>
+                                    <option>not home</option>
+                                    <option>at home</option>
+                                    
                                 </Input>
                             </FormGroup>
                             <FormGroup>
@@ -83,18 +86,21 @@ export default class UserProfile extends React.Component {
             }
         })
     }
-    handleChageState(e){
+    handleChangeState(e){
         this.setState((state,prop)=>{
             var _user = state.userX;
             _user.state = e.target.value
             return{
                 userX: _user
             }
-        },console.log(this.state.userX));
+        });
     }
-    handleSubmit(){
+    handleSubmit(event){
+        event.preventDefault();
         updateUser(this.state.userX).then(user=>{
+            console.log(user);
             this.props.handleuserdata(user.data);
+            this.props.handleUserProfileToggle();
         })
     }
 }

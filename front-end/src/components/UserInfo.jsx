@@ -31,7 +31,7 @@ export default class UserInfo extends React.Component {
                 <div >
                 <Modal isOpen={this.props.toggle} toggle={this.props.handleClick} external={this.externalCloseBtn}>
                 <ModalHeader>
-                    <CardImg top width="100%" src={this.props.user.photo} alt="Card image cap" />
+                    <CardImg top width="100%" src=/*{this.props.user.photo}*/"images/user.png" alt="Card image cap" />
                 </ModalHeader>
                 <ModalBody>
                     <Card>
@@ -43,8 +43,8 @@ export default class UserInfo extends React.Component {
                     </Card>
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" onClick={this.handleClick}>change</Button>{' '}
-                    <Button color="secondary" onClick={this.props.handleClick}>Cancel</Button>
+                    {/* <Button color="primary" onClick={this.handleClick}>change</Button>{' '} */}
+                    <Button color="secondary" onClick={this.props.handleClick}>Back</Button>
                 </ModalFooter>
                 </Modal>
                 </div>

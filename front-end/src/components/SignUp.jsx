@@ -60,18 +60,18 @@ export default class SignUp extends React.Component {
                             onChange={this.handleColor}
                             />
                         </FormGroup>
-                        <FormGroup>
+                        {/* <FormGroup>
                             <Label for="exampleReminder">Select Reminder</Label>
                             <Input type="select" name="reminder" id="exampleReminder" onChange={this.handleReminder}>
                             <option>Yes</option>
                             <option>No</option>
                             </Input>
-                        </FormGroup>
-                        <FormGroup>
+                        </FormGroup> */}
+                        {/* <FormGroup>
                             <Label for="examplePhoto">Photo</Label>
                             <Input type="file" name="photo" id="examplePhoto" />
-                        </FormGroup>
-                        <Button>Submit</Button>
+                        </FormGroup> */}
+                        <Button >Submit</Button>
                     </Form>
                 </div>
             </Router>

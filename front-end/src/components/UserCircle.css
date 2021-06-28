@@ -1,16 +1,49 @@
 .circle{
     border-radius: 50%;
-    width: 160px;
+    width: 180px;
     /* width: 35%; */
-    height: 160px;
+    height: 180px;
     background-color: pink;
     padding-top: 30px;
-    position:absolute
+    position:absolute;
+    transition: 0.5s;
 }
 .name ,.state{
     text-align: center;
-    width: 60%;
-    height: 15%;
     margin:auto;
+    
+    text-decoration: underline;
+    
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-thickness: 3px;
     margin-bottom: 10px;
+}
+
+.state{
+    line-height: 63px;
+    background-image: url(images/calendar1.png);
+    background-size: 92% 108%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 56px;
+}
+
+.userInfo{
+    width: 95px;
+    transform: translateY(-50%) translateX(42%);
+    position: absolute;
+    top: 50%;
+}
+
+.circle:hover{
+    transform: scale(1.2);
+}
+.at-home {
+    box-shadow:3px 3px 12px gray;padding:3px;
+}
+.not-at-home {
+    opacity:0.3;
 }

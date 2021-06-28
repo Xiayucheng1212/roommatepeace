@@ -10,18 +10,29 @@
     text-align: center;
 }
 .foot{
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
     display: flex;
     justify-content: space-around;
 }
-
+.Icon {
+    width: 15px;
+    height: 15px;
+}
 .profile,.write{
     display: inline-block;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     background-color: rgb(210, 231, 243);
     color: black;
     margin: auto;
+}
+.word {
+    text-align: center;
+    font-weight: bolder;
+    height: 50px;
 }
