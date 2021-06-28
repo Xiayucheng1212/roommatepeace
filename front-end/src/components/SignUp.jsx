@@ -106,12 +106,10 @@ export default class SignUp extends React.Component {
         //console.log(this.state.name,this.state.email,this.state.password,this.state.color,this.state.reminder);
         event.preventDefault();
         createUser(this.state.name,this.state.email,this.state.password,this.state.color,this.state.reminder).then(user=>{
-            console.log("success");
             window.history.back();
             this.setState({
                 // history: history.back()
             },()=>{
-                console.log(history,user)
                 // event.preventDefault()
                 this.handleuserdata(user);
             });
