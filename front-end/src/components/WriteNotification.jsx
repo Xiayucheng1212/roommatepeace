@@ -32,15 +32,18 @@ export default class WriteNotification extends React.Component {
         var content;
         if (this.props.writeNotificationToggle) {
             content =
-                <div className="position-absolute top-50 start-50 translate-middle writeNotification">
+                <div className="position-absolute top-50 start-50 translate-middle writeNotification" style={{backgroundColor:this.props.user.color}}>
                     <div className="icon">
+                    </div>
+                    <div>
+                        <Alert color="secondary" >Write A Noification</Alert>
                     </div>
                     <div className="close" onClick={this.props.handleWriteNotificationToggle}>
                     </div>
-                    <div className="setting">
+                    <div className="setting" >
                         <Form onSubmit={this.handleSubmit}>
                             <FormGroup>
-                                <Label for="exampleName" className="mr-sm-2">Write a notification</Label>
+                                {/* <Label for="exampleName" className="mr-sm-2">Write a notification</Label> */}
                                 <Input type="text" name="notification" id="noti" placeholder="Write a notification..." onChange={this.handleNotification} />
                             </FormGroup>
                             <Button outline color="info">Submit</Button>

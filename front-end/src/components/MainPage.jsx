@@ -56,7 +56,7 @@ export default class MainPage extends React.Component {
                             <Route exact path="/login"
                                 //component={Login}
                                 render={()=>(
-                                    <Login handleuserdata={this.props.handleuserdata}/>
+                                    <Login handleuserdata={this.props.handleuserdata} isLogged={this.props.isLogged}/>
                                 )}
                             />
                             {/* 完成驗證之後 傳送callback向上更新 */}

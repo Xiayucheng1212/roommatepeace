@@ -64,12 +64,15 @@ export default class WriteComplain extends React.Component {
         var content;
         if (this.props.writeComplainToggle) {
             content =
-                <div className="position-absolute top-50 start-50 translate-middle writeComplain">
+                <div className="position-absolute top-50 start-50 translate-middle writeComplain" style={{backgroundColor:this.props.user.color}}>
                     <div className="icon">
+                    </div>
+                    <div>
+                        <Alert color="secondary">Write A Complain</Alert>
                     </div>
                     <div className="close" onClick={this.props.handleWriteComplainToggle}>
                     </div>
-                    <div className="setting">
+                    <div className="setting" >
                         <Form onSubmit={this.handleSubmit}>
                             <FormGroup>
                                 <Label for="state">Select Problem</Label>
