@@ -63,12 +63,11 @@ export default class Login extends React.Component {
 
     checkIsLoggin(event){
         event.preventDefault();
-        console.log(this.state.email,this.state.password);
+
         if(!this.props.isLogged){
             checkLogin(this.state.email,this.state.password).then(user=>{
-                console.log(user.data.length);
+
                 if(user.data.length == 0){
-                    console.log("llll");
                     this.setState({isWrong:true});
                     return ;
                 }

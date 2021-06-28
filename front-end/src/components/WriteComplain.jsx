@@ -85,6 +85,7 @@ export default class WriteComplain extends React.Component {
                             <FormGroup>
                                 <Label for="reason">Reason</Label>
                                 <Input type="select" name="reason" id="reason" onChange={this.handleReason}>
+                                    <option value="" selected disabled>------</option>
                                     {
                                         this.state.reasonOption.map((item,index)=>{
                                             return <option>{item}</option>
@@ -95,6 +96,7 @@ export default class WriteComplain extends React.Component {
                             <FormGroup>
                                 <Label for="towhom">To Who</Label>
                                 <Input type="select" name="towhom" id="towhom" onChange={this.handleTowhom}>
+                                    <option value="" selected disabled>------</option>
                                     {
                                         this.props.roommates.map((item, index)=>{
                                            if(item.id !== this.props.user.id){
@@ -178,7 +180,6 @@ export default class WriteComplain extends React.Component {
         });
     }
     handleTowhom(e){
-        console.log(e.target.value);
         this.setState({towhom:e.target.value})
     }
     handleExpect(e){
@@ -187,11 +188,11 @@ export default class WriteComplain extends React.Component {
     handleSubmit(e){
         e.preventDefault();
         // console.log("ppppp");
-        console.log(this.props.user.id,
-            this.state.towhom,
-            this.state.problem,
-            this.state.reason,
-           this.state.expect);
+        // console.log(this.props.user.id,
+        //     this.state.towhom,
+        //     this.state.problem,
+        //     this.state.reason,
+        //    this.state.expect);
         createComplain({
             from_user: this.props.user.id,
             to_user: this.state.towhom,
@@ -199,7 +200,6 @@ export default class WriteComplain extends React.Component {
             reason: this.state.reason,
             expect: this.state.expect
         }).then((cpl)=>{
-            console.log(cpl);
             this.props.handleWriteComplainToggle();
         })
     }

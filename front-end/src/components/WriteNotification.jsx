@@ -12,7 +12,8 @@ export default class WriteNotification extends React.Component {
     static propTypes = {
         user: PropTypes.object,
         writeNotificationToggle: PropTypes.bool,
-        handleWriteNotificationToggle: PropTypes.func
+        handleWriteNotificationToggle: PropTypes.func,
+        handleNotificationUpdate: PropTypes.func
     };
     constructor(props) {
         super(props);
@@ -69,7 +70,9 @@ export default class WriteNotification extends React.Component {
         createNotification({
             room_id:this.props.user.room_id,
             text: this.state.notification
-        }).then((cpl)=>{
+        }).then((notification)=>{
+            console.log(notification);
+            this.props.handleNotificationUpdate(notification.data)
             this.props.handleWriteNotificationToggle();
         })
     }

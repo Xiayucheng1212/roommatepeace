@@ -66,7 +66,6 @@ export default class HomePage extends React.Component {
     async componentDidMount(){
         if(this.props.user.room_id == 0) return;
         const res = await getRoomname(this.props.user.room_id);
-        console.log(res);
         this.setState({
             room_name:res.data.name
         })
